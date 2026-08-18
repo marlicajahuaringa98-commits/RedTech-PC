@@ -1144,9 +1144,6 @@ button{
 }
 
 
-/* =========================================================
-   TOAST
-========================================================= */
 
 .toast{
 
@@ -1197,9 +1194,6 @@ button{
 }
 
 
-/* =========================================================
-   FOOTER
-========================================================= */
 
 .footer{
 
@@ -1216,9 +1210,6 @@ button{
 }
 
 
-/* =========================================================
-   RESPONSIVE — CELULAR
-========================================================= */
 
 @media(max-width:900px){
 
@@ -1380,9 +1371,7 @@ button{
 }
 
 
-/* =========================================================
-   UTILIDADES
-========================================================= */
+
 
 .hidden{
 
@@ -1425,9 +1414,6 @@ button{
 <body>
 
 
-<!-- =======================================================
-     SPLASH
-======================================================= -->
 
 <div
 id="splash"
@@ -1458,16 +1444,11 @@ class="splash"
 </div>
 
 
-<!-- =======================================================
-     APLICACIÓN
-======================================================= -->
 
 <div class="app">
 
 
-<!-- =======================================================
-     HEADER
-======================================================= -->
+
 
 <header class="topbar">
 
@@ -1521,9 +1502,7 @@ class="splash"
 </header>
 
 
-<!-- =======================================================
-     HOME
-======================================================= -->
+
 
 <section
 id="home"
@@ -1531,7 +1510,7 @@ class="screen active"
 >
 
 
-<!-- HERO -->
+
 
 <div class="hero card">
 
@@ -1591,8 +1570,7 @@ class="screen active"
     </div>
 
 
-    <!-- ILUSTRACIÓN PC -->
-
+    
     <div class="hero-art">
 
         <svg
@@ -1601,8 +1579,7 @@ class="screen active"
         xmlns="http://www.w3.org/2000/svg"
         >
 
-            <!-- monitor -->
-
+            
             <rect
             x="85"
             y="35"
@@ -1623,8 +1600,7 @@ class="screen active"
             fill="#050b16"
             />
 
-            <!-- pantalla -->
-
+            
             <circle
             cx="250"
             cy="130"
@@ -1648,7 +1624,7 @@ class="screen active"
             fill="#50ddff"
             />
 
-            <!-- base -->
+            
 
             <path
             d="M205 250h90"
@@ -1664,7 +1640,7 @@ class="screen active"
             stroke-linecap="round"
             />
 
-            <!-- teclado -->
+            
 
             <rect
             x="120"
@@ -1683,9 +1659,6 @@ class="screen active"
 </div>
 
 
-<!-- =======================================================
-     JUEGOS PRINCIPALES
-======================================================= -->
 
 <div class="section-title">
 
@@ -1787,7 +1760,7 @@ onclick="startAssembler()"
 </div>
 
 
-<!-- LAN BUILDER -->
+
 
 <div
 class="game-card card"
@@ -1827,7 +1800,6 @@ onclick="startLAN()"
 </div>
 
 
-<!-- TECH MEMORY -->
 
 <div
 class="game-card card"
@@ -1867,7 +1839,6 @@ onclick="startMemory()"
 </div>
 
 
-<!-- BOSS BATTLE -->
 
 <div
 class="game-card card"
@@ -1907,7 +1878,6 @@ onclick="startBoss()"
 </div>
 
 
-<!-- MISIONES -->
 
 <div
 class="game-card card"
@@ -1949,9 +1919,6 @@ onclick="openMissions()"
 </div>
 
 
-<!-- =======================================================
-     PERFIL MINI
-======================================================= -->
 
 <div class="profile-card card">
 
@@ -2018,9 +1985,6 @@ onclick="openMissions()"
 </div>
 
 
-<!-- =======================================================
-     ACCESOS RÁPIDOS
-======================================================= -->
 
 <div class="quick-grid">
 
@@ -2095,9 +2059,6 @@ onclick="openSettings()">
 </div>
 
 
-<!-- =======================================================
-     FOOTER
-======================================================= -->
 
 <div class="footer">
 
@@ -2120,36 +2081,17 @@ onclick="openSettings()">
 </section>
 
 
-<!-- =======================================================
-     AQUÍ CONTINUARÁ LA PARTE 2
-     
-     NO CERRAR:
-     body
-     html
-     
-     Tampoco agregues otro <!DOCTYPE html>.
-======================================================= -->
+
 
 
 <script>
 
-/* =========================================================
-   REDTECH PC ACADEMY 3.0
-   PARTE 1 — MOTOR BASE
-========================================================= */
 
-
-/* =========================================================
-   CLAVE DE GUARDADO
-========================================================= */
 
 const STORAGE_KEY =
 "REDTECH_PC_ACADEMY_3";
 
 
-/* =========================================================
-   ESTADO INICIAL DEL JUGADOR
-========================================================= */
 
 const DEFAULT_STATE = {
 
@@ -2210,9 +2152,6 @@ const DEFAULT_STATE = {
 };
 
 
-/* =========================================================
-   CARGAR DATOS
-========================================================= */
 
 let GAME_STATE =
 loadGame();
@@ -2265,9 +2204,7 @@ function loadGame(){
 }
 
 
-/* =========================================================
-   MEZCLAR OBJETOS
-========================================================= */
+
 
 function mergeObjects(base, data){
 
@@ -2312,9 +2249,7 @@ function mergeObjects(base, data){
 }
 
 
-/* =========================================================
-   GUARDAR
-========================================================= */
+
 
 function saveGame(){
 
@@ -2341,9 +2276,7 @@ function saveGame(){
 }
 
 
-/* =========================================================
-   CAMBIAR PANTALLA
-========================================================= */
+
 
 function show(screenId){
 
@@ -2382,9 +2315,7 @@ function show(screenId){
 }
 
 
-/* =========================================================
-   SONIDO BASE
-========================================================= */
+
 
 let audioContext=null;
 
@@ -2485,16 +2416,13 @@ function playSound(
 
     catch(error){
 
-        /* El sonido no afecta al juego. */
-
+        
     }
 
 }
 
 
-/* =========================================================
-   TOAST
-========================================================= */
+
 
 let toastTimer;
 
@@ -2559,9 +2487,6 @@ function toast(message){
 }
 
 
-/* =========================================================
-   XP
-========================================================= */
 
 function addXP(amount){
 
@@ -2614,9 +2539,7 @@ function addXP(amount){
 }
 
 
-/* =========================================================
-   NIVEL
-========================================================= */
+
 
 function getLevel(xp){
 
@@ -2627,9 +2550,6 @@ function getLevel(xp){
 }
 
 
-/* =========================================================
-   RANGO
-========================================================= */
 
 function getRank(level){
 
@@ -2653,9 +2573,6 @@ function getRank(level){
 }
 
 
-/* =========================================================
-   MONEDAS
-========================================================= */
 
 function addCoins(amount){
 
@@ -2674,9 +2591,7 @@ function addCoins(amount){
 }
 
 
-/* =========================================================
-   RENDER GLOBAL
-========================================================= */
+
 
 function renderGlobal(){
 
@@ -2775,11 +2690,7 @@ function renderGlobal(){
 }
 
 
-/* =========================================================
-   NAVEGACIÓN BASE
-   Estas funciones serán ampliadas
-   en las siguientes partes.
-========================================================= */
+
 
 function startAcademy(){
 
@@ -2874,16 +2785,11 @@ function showAbout(){
 }
 
 
-/* =========================================================
-   INICIO
-========================================================= */
+
 
 renderGlobal();
 
 
-/* =========================================================
-   SPLASH
-========================================================= */
 
 window.addEventListener(
     "load",
@@ -2964,16 +2870,7 @@ window.addEventListener(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 2/24
-     ACADEMIA + MAPA + PERFIL + ESTADÍSTICAS
-========================================================= -->
 
-
-<!-- =========================================================
-     ACADEMIA
-========================================================= -->
 
 <section
 id="academy"
@@ -3012,8 +2909,7 @@ class="screen"
         </div>
 
 
-        <!-- RESUMEN DEL JUGADOR -->
-
+       
         <div
         class="profile-card"
         style="margin-top:20px"
@@ -3091,10 +2987,7 @@ class="screen"
     </div>
 
 
-    <!-- =====================================================
-         MAPA
-    ====================================================== -->
-
+   
     <div class="section-title">
 
         <div>
@@ -3116,15 +3009,11 @@ class="screen"
     class="card"
     id="academyMap">
 
-        <!-- Se genera mediante JavaScript -->
-
+        
     </div>
 
 
-    <!-- =====================================================
-         CATEGORÍAS
-    ====================================================== -->
-
+    
     <div class="section-title">
 
         <div>
@@ -3145,8 +3034,7 @@ class="screen"
     <div class="game-grid">
 
 
-        <!-- PC MASTER -->
-
+        
         <div
         class="game-card card"
         onclick="startPCMaster()">
@@ -3179,7 +3067,7 @@ class="screen"
         </div>
 
 
-        <!-- ASSEMBLER -->
+        
 
         <div
         class="game-card card"
@@ -3213,7 +3101,7 @@ class="screen"
         </div>
 
 
-        <!-- LAN -->
+        
 
         <div
         class="game-card card"
@@ -3247,8 +3135,7 @@ class="screen"
         </div>
 
 
-        <!-- MEMORY -->
-
+        
         <div
         class="game-card card"
         onclick="startMemory()">
@@ -3281,7 +3168,7 @@ class="screen"
         </div>
 
 
-        <!-- BOSS -->
+       
 
         <div
         class="game-card card"
@@ -3315,8 +3202,7 @@ class="screen"
         </div>
 
 
-        <!-- MISIONES -->
-
+       
         <div
         class="game-card card"
         onclick="openMissions()">
@@ -3351,10 +3237,7 @@ class="screen"
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
-
+    
     <div class="section-title">
 
         <div>
@@ -3478,9 +3361,7 @@ class="screen"
     </div>
 
 
-    <!-- =====================================================
-         BOTONES
-    ====================================================== -->
+    
 
     <div
     class="quick-grid"
@@ -3560,9 +3441,6 @@ class="screen"
 
 
 
-<!-- =========================================================
-     PERFIL
-========================================================= -->
 
 <section
 id="profile"
@@ -3621,8 +3499,7 @@ class="screen"
         </div>
 
 
-        <!-- NIVEL -->
-
+       
         <div
         class="card"
         style="margin-top:20px"
@@ -3667,8 +3544,7 @@ class="screen"
         </div>
 
 
-        <!-- MONEDAS -->
-
+       
         <div
         style="
             display:grid;
@@ -3729,7 +3605,7 @@ class="screen"
         </div>
 
 
-        <!-- RACHAS -->
+        
 
         <div class="card">
 
@@ -3773,8 +3649,7 @@ class="screen"
         </div>
 
 
-        <!-- ESTADÍSTICAS -->
-
+        
         <div class="card">
 
             <h3>
@@ -3854,8 +3729,7 @@ class="screen"
         </div>
 
 
-        <!-- PERFIL INFO -->
-
+       
         <div class="card">
 
             <h3>
@@ -3891,16 +3765,10 @@ class="screen"
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — PARTE 2
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   NIVELES DE LA ACADEMIA
-========================================================= */
 
 const ACADEMY_LEVELS = [
 
@@ -4008,9 +3876,7 @@ const ACADEMY_LEVELS = [
 
 
 
-/* =========================================================
-   RENDERIZAR MAPA
-========================================================= */
+
 
 function renderAcademyMap(){
 
@@ -4173,9 +4039,6 @@ function renderAcademyMap(){
 }
 
 
-/* =========================================================
-   ENTRAR A NIVEL
-========================================================= */
 
 function enterAcademyLevel(level){
 
@@ -4230,9 +4093,6 @@ function enterAcademyLevel(level){
 }
 
 
-/* =========================================================
-   ACTUALIZAR PERFIL
-========================================================= */
 
 function renderProfile(){
 
@@ -4331,9 +4191,7 @@ function renderProfile(){
 }
 
 
-/* =========================================================
-   ACTUALIZAR ACADEMIA
-========================================================= */
+
 
 function renderAcademy(){
 
@@ -4460,9 +4318,7 @@ function renderAcademy(){
 }
 
 
-/* =========================================================
-   REINICIAR PROGRESO
-========================================================= */
+
 
 function confirmResetGame(){
 
@@ -4501,9 +4357,7 @@ function confirmResetGame(){
 }
 
 
-/* =========================================================
-   DETECTAR CAMBIO DE PANTALLA
-========================================================= */
+
 
 const originalShow =
     show;
@@ -4540,9 +4394,6 @@ show =
     };
 
 
-/* =========================================================
-   INICIALIZAR
-========================================================= */
 
 renderAcademy();
 
@@ -4551,16 +4402,6 @@ renderProfile();
 renderGlobal();
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 3/24
-     PC MASTER — SISTEMA COMPLETO
-========================================================= -->
-
-
-<!-- =========================================================
-     PANTALLA PC MASTER
-========================================================= -->
 
 <section
 id="pcmaster"
@@ -4569,7 +4410,7 @@ class="screen"
 
     <div class="card">
 
-        <!-- CABECERA -->
+        
 
         <div class="row">
 
@@ -4632,7 +4473,7 @@ class="screen"
         </div>
 
 
-        <!-- PROGRESO -->
+        
 
         <div
         style="
@@ -4675,7 +4516,7 @@ class="screen"
         </div>
 
 
-        <!-- INFORMACIÓN DE PARTIDA -->
+        
 
         <div
         style="
@@ -4742,10 +4583,7 @@ class="screen"
     </div>
 
 
-    <!-- =====================================================
-         PREGUNTA
-    ====================================================== -->
-
+    
     <div
     class="card"
     id="pcQuestionCard"
@@ -4773,8 +4611,7 @@ class="screen"
         </h2>
 
 
-        <!-- RESPUESTAS -->
-
+        
         <div
         id="pcAnswers"
         class="answers">
@@ -4782,8 +4619,7 @@ class="screen"
         </div>
 
 
-        <!-- FEEDBACK -->
-
+       
         <div
         id="pcFeedback"
         class="feedback">
@@ -4807,10 +4643,7 @@ class="screen"
     </div>
 
 
-    <!-- =====================================================
-         CONSEJO
-    ====================================================== -->
-
+    
     <div
     class="card"
     style="
@@ -4862,9 +4695,7 @@ class="screen"
 
 
 
-<!-- =========================================================
-     RESULTADO PC MASTER
-========================================================= -->
+
 
 <section
 id="pcResult"
@@ -4917,7 +4748,7 @@ class="screen"
         </p>
 
 
-        <!-- RESULTADOS -->
+       
 
         <div
         style="
@@ -5027,9 +4858,7 @@ class="screen"
 
 
 
-<!-- =========================================================
-     ESTILOS PC MASTER
-========================================================= -->
+
 
 <style>
 
@@ -5244,16 +5073,12 @@ class="screen"
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — PC MASTER
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   BANCO DE PREGUNTAS
-========================================================= */
+
 
 const PC_MASTER_QUESTIONS = [
 
@@ -5620,9 +5445,7 @@ const PC_MASTER_QUESTIONS = [
 
 
 
-/* =========================================================
-   VARIABLES DE PARTIDA
-========================================================= */
+
 
 let pcGame = {
 
@@ -5648,9 +5471,7 @@ let pcGame = {
 
 
 
-/* =========================================================
-   MEZCLAR ARRAY
-========================================================= */
+
 
 function shuffleArray(array){
 
@@ -5663,9 +5484,7 @@ function shuffleArray(array){
 
 
 
-/* =========================================================
-   INICIAR PC MASTER
-========================================================= */
+
 
 function startPCMaster(){
 
@@ -5715,9 +5534,7 @@ function startPCMaster(){
 
 
 
-/* =========================================================
-   CARGAR PREGUNTA
-========================================================= */
+
 
 function loadPCQuestion(){
 
@@ -5856,9 +5673,7 @@ function loadPCQuestion(){
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
+
 
 function answerPCQuestion(selected){
 
@@ -5924,17 +5739,12 @@ function answerPCQuestion(selected){
             );
 
 
-        /*
-         * RECOMPENSA BASE
-         */
+        
 
         let reward=50;
 
 
-        /*
-         * BONIFICACIÓN POR RACHA
-         */
-
+        
         if(pcGame.combo>=3)
             reward+=25;
 
@@ -5950,9 +5760,7 @@ function answerPCQuestion(selected){
         pcGame.score+=reward;
 
 
-        /*
-         * RECOMPENSA GLOBAL
-         */
+       
 
         addXP(reward);
 
@@ -6056,9 +5864,6 @@ function answerPCQuestion(selected){
 
 
 
-/* =========================================================
-   FEEDBACK
-========================================================= */
 
 function feedbackPC(type,text){
 
@@ -6089,9 +5894,6 @@ function feedbackPC(type,text){
 
 
 
-/* =========================================================
-   SIGUIENTE PREGUNTA
-========================================================= */
 
 function nextPCQuestion(){
 
@@ -6120,9 +5922,6 @@ function nextPCQuestion(){
 
 
 
-/* =========================================================
-   ACTUALIZAR INTERFAZ
-========================================================= */
 
 function updatePCInterface(){
 
@@ -6219,18 +6018,13 @@ function updatePCInterface(){
 
 
 
-/* =========================================================
-   TERMINAR PC MASTER
-========================================================= */
 
 function finishPCMaster(gameOver=false){
 
     clearPCQuestionUI();
 
 
-    /*
-     * BONIFICACIÓN POR COMPLETAR
-     */
+    
 
     let bonus=0;
 
@@ -6247,9 +6041,7 @@ function finishPCMaster(gameOver=false){
     }
 
 
-    /*
-     * LOGRO
-     */
+    
 
     if(
         pcGame.correct>=5 &&
@@ -6271,10 +6063,7 @@ function finishPCMaster(gameOver=false){
     }
 
 
-    /*
-     * ZONA DE ACADEMIA
-     */
-
+    
     if(
         !GAME_STATE.completedZones.includes(
             1
@@ -6432,9 +6221,6 @@ function finishPCMaster(gameOver=false){
 
 
 
-/* =========================================================
-   LIMPIAR INTERFAZ
-========================================================= */
 
 function clearPCQuestionUI(){
 
@@ -6462,9 +6248,7 @@ function clearPCQuestionUI(){
 
 
 
-/* =========================================================
-   SALIR DEL JUEGO
-========================================================= */
+
 
 function exitPCMaster(){
 
@@ -6499,9 +6283,7 @@ function exitPCMaster(){
 
 
 
-/* =========================================================
-   COMPATIBILIDAD CON LOS BOTONES
-========================================================= */
+
 
 function startQuiz(){
 
@@ -6518,9 +6300,6 @@ function startPC(){
 
 
 
-/* =========================================================
-   ACTUALIZAR CUANDO CAMBIA EL JUEGO
-========================================================= */
 
 function refreshPCMaster(){
 
@@ -6530,9 +6309,6 @@ function refreshPCMaster(){
 
 
 
-/* =========================================================
-   TECLADO — A, B, C, D
-========================================================= */
 
 document.addEventListener(
     "keydown",
@@ -6593,9 +6369,7 @@ document.addEventListener(
 
 
 
-/* =========================================================
-   REGISTRAR PC MASTER EN EL MAPA
-========================================================= */
+
 
 if(
     typeof GAME_STATE !==
@@ -6627,20 +6401,14 @@ if(
 
 
 
-/* =========================================================
-   FINAL DE PARTE 3
-========================================================= */
+
 
 console.log(
     "🧠 PC MASTER cargado correctamente."
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 4/24
-     🔧 PC ASSEMBLER — SIMULADOR DE ENSAMBLAJE
-========================================================= -->
+
 
 <section id="assembler" class="screen">
 
@@ -6712,13 +6480,10 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         LABORATORIO
-    ====================================================== -->
-
+    
     <div class="assembler-layout">
 
-        <!-- PC VISUAL -->
+        
 
         <div class="card">
 
@@ -6862,7 +6627,7 @@ console.log(
         </div>
 
 
-        <!-- COMPONENTES -->
+       
 
         <div class="card">
 
@@ -6916,9 +6681,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     RESULTADO ASSEMBLER
-========================================================= -->
 
 <section
 id="assemblerResult"
@@ -7046,9 +6808,6 @@ class="screen">
 
 
 
-<!-- =========================================================
-     ESTILOS PC ASSEMBLER
-========================================================= -->
 
 <style>
 
@@ -7460,16 +7219,10 @@ class="screen">
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — PC ASSEMBLER
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   COMPONENTES
-========================================================= */
 
 const ASSEMBLER_COMPONENTS = [
 
@@ -7578,9 +7331,6 @@ const ASSEMBLER_COMPONENTS = [
 
 
 
-/* =========================================================
-   ESTADO DEL ENSAMBLAJE
-========================================================= */
 
 let assemblerGame = {
 
@@ -7598,9 +7348,7 @@ let assemblerGame = {
 
 
 
-/* =========================================================
-   INICIAR
-========================================================= */
+
 
 function startAssembler(){
 
@@ -7634,9 +7382,7 @@ function startAssembler(){
 
 
 
-/* =========================================================
-   MOSTRAR COMPONENTES
-========================================================= */
+
 
 function renderAssemblerComponents(){
 
@@ -7723,9 +7469,7 @@ function renderAssemblerComponents(){
 
 
 
-/* =========================================================
-   SELECCIONAR COMPONENTE
-========================================================= */
+
 
 function selectAssemblerComponent(id){
 
@@ -7779,9 +7523,6 @@ function selectAssemblerComponent(id){
 
 
 
-/* =========================================================
-   CLICK EN LOS SLOTS
-========================================================= */
 
 document.addEventListener(
     "click",
@@ -7814,9 +7555,7 @@ document.addEventListener(
 
 
 
-/* =========================================================
-   COLOCAR COMPONENTE
-========================================================= */
+
 
 function placeAssemblerComponent(slotId){
 
@@ -7853,9 +7592,7 @@ function placeAssemblerComponent(slotId){
         return;
 
 
-    /*
-     * COMPONENTE CORRECTO
-     */
+    
 
     if(
         component.slot===slotId
@@ -7951,9 +7688,7 @@ function placeAssemblerComponent(slotId){
         updateAssemblerUI();
 
 
-        /*
-         * SI TERMINÓ
-         */
+       
 
         if(
             assemblerGame.correct===
@@ -7978,9 +7713,7 @@ function placeAssemblerComponent(slotId){
         );
 
 
-        /*
-         * FORZAR ANIMACIÓN
-         */
+        
 
         void slot.offsetWidth;
 
@@ -8014,9 +7747,6 @@ function placeAssemblerComponent(slotId){
 
 
 
-/* =========================================================
-   COMPROBAR
-========================================================= */
 
 function checkAssembly(){
 
@@ -8054,16 +7784,12 @@ function checkAssembly(){
     assemblerGame.finished=true;
 
 
-    /*
-     * XP BASE
-     */
+   
 
     let earnedXP=300;
 
 
-    /*
-     * BONIFICACIÓN POR POCOS INTENTOS
-     */
+   
 
     if(
         assemblerGame.attempts<=6
@@ -8081,9 +7807,7 @@ function checkAssembly(){
     }
 
 
-    /*
-     * BONIFICACIÓN PERFECTA
-     */
+    
 
     const perfect =
         assemblerGame.attempts===6;
@@ -8101,9 +7825,7 @@ function checkAssembly(){
     );
 
 
-    /*
-     * LOGRO
-     */
+   
 
     if(
         !GAME_STATE.achievements.includes(
@@ -8120,9 +7842,7 @@ function checkAssembly(){
     }
 
 
-    /*
-     * ZONA COMPLETADA
-     */
+   
 
     if(
         !GAME_STATE.completedZones.includes(
@@ -8140,9 +7860,7 @@ function checkAssembly(){
     saveGame();
 
 
-    /*
-     * RESULTADO
-     */
+    
 
     document.getElementById(
         "assemblyCorrect"
@@ -8230,9 +7948,7 @@ function checkAssembly(){
 
 
 
-/* =========================================================
-   REINICIAR
-========================================================= */
+
 
 function resetAssembly(){
 
@@ -8242,9 +7958,6 @@ function resetAssembly(){
 
 
 
-/* =========================================================
-   RESTABLECER SLOTS
-========================================================= */
 
 function resetAssemblerSlots(){
 
@@ -8304,9 +8017,7 @@ function resetAssemblerSlots(){
 
 
 
-/* =========================================================
-   ACTUALIZAR PROGRESO
-========================================================= */
+
 
 function updateAssemblerUI(){
 
@@ -8386,9 +8097,6 @@ function updateAssemblerUI(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitAssembler(){
 
@@ -8420,9 +8128,6 @@ function exitAssembler(){
 
 
 
-/* =========================================================
-   COMPATIBILIDAD
-========================================================= */
 
 function startAssembly(){
 
@@ -8436,11 +8141,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 5/24
-     🌐 LAN BUILDER — LABORATORIO DE REDES
-========================================================= -->
+
 
 <section id="lanbuilder" class="screen">
 
@@ -8526,10 +8227,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         DIAGRAMA DE RED
-    ====================================================== -->
-
+   
     <div class="card"
     style="margin-top:15px">
 
@@ -8637,9 +8335,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PREGUNTA LAN
-    ====================================================== -->
+   
 
     <div class="card"
     style="margin-top:15px">
@@ -8696,10 +8392,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CONSEJO LAN
-    ====================================================== -->
-
+   
     <div class="card"
     style="margin-top:15px">
 
@@ -8742,9 +8435,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     RESULTADO LAN
-========================================================= -->
 
 <section
 id="lanResult"
@@ -8871,9 +8561,7 @@ class="screen">
 
 
 
-<!-- =========================================================
-     ESTILOS LAN
-========================================================= -->
+
 
 <style>
 
@@ -9180,16 +8868,11 @@ class="screen">
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — LAN BUILDER
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   BANCO DE RETOS
-========================================================= */
 
 const LAN_QUESTIONS = [
 
@@ -9412,9 +9095,7 @@ const LAN_QUESTIONS = [
 
 
 
-/* =========================================================
-   ESTADO DEL JUEGO
-========================================================= */
+    
 
 let lanGame={
 
@@ -9436,9 +9117,6 @@ let lanGame={
 
 
 
-/* =========================================================
-   INICIAR LAN
-========================================================= */
 
 function startLANBuilder(){
 
@@ -9485,9 +9163,6 @@ function startLANBuilder(){
 
 
 
-/* =========================================================
-   CARGAR RETO
-========================================================= */
 
 function loadLANQuestion(){
 
@@ -9607,9 +9282,6 @@ function loadLANQuestion(){
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
 
 function answerLANQuestion(selected){
 
@@ -9796,9 +9468,7 @@ function answerLANQuestion(selected){
 
 
 
-/* =========================================================
-   SIGUIENTE
-========================================================= */
+
 
 function nextLANQuestion(){
 
@@ -9829,9 +9499,7 @@ function nextLANQuestion(){
 
 
 
-/* =========================================================
-   INTERFAZ
-========================================================= */
+
 
 function updateLANInterface(){
 
@@ -9911,15 +9579,11 @@ function updateLANInterface(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishLAN(){
 
-    /*
-     * BONUS DE FINALIZACIÓN
-     */
+    
 
     const bonus=150;
 
@@ -9929,9 +9593,7 @@ function finishLAN(){
     );
 
 
-    /*
-     * LOGRO LAN
-     */
+    
 
     if(
         !GAME_STATE.achievements.includes(
@@ -9948,9 +9610,7 @@ function finishLAN(){
     }
 
 
-    /*
-     * ZONA
-     */
+   
 
     if(
         !GAME_STATE.completedZones.includes(
@@ -10076,9 +9736,7 @@ function finishLAN(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitLANBuilder(){
 
@@ -10114,9 +9772,6 @@ function exitLANBuilder(){
 
 
 
-/* =========================================================
-   COMPATIBILIDAD
-========================================================= */
 
 function startNet(){
 
@@ -10137,11 +9792,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 6/24
-     🧩 TECH MEMORY — MEMORIA TECNOLÓGICA
-========================================================= -->
+
 
 <section id="techmemory" class="screen">
 
@@ -10227,9 +9878,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
+    
 
     <div
     class="grid"
@@ -10309,9 +9958,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         TABLERO
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -10364,9 +10011,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CONTROLES
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -10403,9 +10048,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     RESULTADO MEMORY
-========================================================= -->
+
 
 <section
 id="memoryResult"
@@ -10552,9 +10195,7 @@ class="screen">
 
 
 
-<!-- =========================================================
-     ESTILOS TECH MEMORY
-========================================================= -->
+
 
 <style>
 
@@ -10857,16 +10498,12 @@ class="screen">
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — TECH MEMORY
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   COMPONENTES
-========================================================= */
+
 
 const MEMORY_COMPONENTS=[
 
@@ -10914,9 +10551,7 @@ const MEMORY_COMPONENTS=[
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let memoryGame={
 
@@ -10948,9 +10583,7 @@ let memoryGame={
 
 
 
-/* =========================================================
-   SHUFFLE
-========================================================= */
+
 
 function shuffleMemory(array){
 
@@ -10989,9 +10622,7 @@ function shuffleMemory(array){
 
 
 
-/* =========================================================
-   INICIAR
-========================================================= */
+
 
 function startTechMemory(){
 
@@ -11092,9 +10723,7 @@ function startTechMemory(){
 
 
 
-/* =========================================================
-   TABLERO
-========================================================= */
+
 
 function renderMemoryBoard(){
 
@@ -11165,9 +10794,6 @@ function renderMemoryBoard(){
 
 
 
-/* =========================================================
-   VOLTEAR CARTA
-========================================================= */
 
 function flipMemoryCard(index){
 
@@ -11202,9 +10828,7 @@ function flipMemoryCard(index){
         return;
 
 
-    /*
-     * INICIA EL TEMPORIZADOR
-     */
+   
 
     if(
         !memoryGame.started
@@ -11273,9 +10897,7 @@ function flipMemoryCard(index){
 
 
 
-/* =========================================================
-   COMPROBAR PAREJA
-========================================================= */
+
 
 function checkMemoryPair(){
 
@@ -11295,9 +10917,7 @@ function checkMemoryPair(){
         second.card.name
     ){
 
-        /*
-         * PAREJA CORRECTA
-         */
+       
 
         first.element.classList.add(
             "matched"
@@ -11403,9 +11023,7 @@ function checkMemoryPair(){
         saveGame();
 
 
-        /*
-         * TERMINAR
-         */
+       
 
         if(
             memoryGame.pairs===
@@ -11423,9 +11041,7 @@ function checkMemoryPair(){
 
     else{
 
-        /*
-         * ERROR
-         */
+       
 
         memoryGame.combo=0;
 
@@ -11487,9 +11103,7 @@ function checkMemoryPair(){
 
 
 
-/* =========================================================
-   ACTUALIZAR INTERFAZ
-========================================================= */
+
 
 function updateMemoryInterface(){
 
@@ -11605,9 +11219,7 @@ function updateMemoryInterface(){
 
 
 
-/* =========================================================
-   FINALIZAR MEMORY
-========================================================= */
+
 
 function finishTechMemory(){
 
@@ -11616,16 +11228,12 @@ function finishTechMemory(){
     );
 
 
-    /*
-     * BONUS POR COMPLETAR
-     */
+   
 
     let bonus=150;
 
 
-    /*
-     * BONUS POR VELOCIDAD
-     */
+    
 
     if(
         memoryGame.time<=45
@@ -11643,9 +11251,7 @@ function finishTechMemory(){
     }
 
 
-    /*
-     * BONUS POR POCOS MOVIMIENTOS
-     */
+   
 
     if(
         memoryGame.moves<=12
@@ -11661,10 +11267,7 @@ function finishTechMemory(){
     );
 
 
-    /*
-     * LOGRO
-     */
-
+   
     if(
         !GAME_STATE.achievements.includes(
             "memory"
@@ -11680,9 +11283,7 @@ function finishTechMemory(){
     }
 
 
-    /*
-     * ZONA COMPLETADA
-     */
+    
 
     if(
         !GAME_STATE.completedZones.includes(
@@ -11703,10 +11304,7 @@ function finishTechMemory(){
     saveGame();
 
 
-    /*
-     * RESULTADO
-     */
-
+   
     document.getElementById(
         "memoryResultMoves"
     ).textContent=
@@ -11796,9 +11394,6 @@ function finishTechMemory(){
 
 
 
-/* =========================================================
-   REINICIAR
-========================================================= */
 
 function restartTechMemory(){
 
@@ -11818,9 +11413,7 @@ function restartTechMemory(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitTechMemory(){
 
@@ -11860,9 +11453,7 @@ function exitTechMemory(){
 
 
 
-/* =========================================================
-   COMPATIBILIDAD CON EL JUEGO
-========================================================= */
+
 
 function startMem(){
 
@@ -11876,11 +11467,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 7/24
-     👹 BOSS BATTLE — BATALLA DEL JEFE
-========================================================= -->
+
 
 <section id="bossbattle" class="screen">
 
@@ -11935,9 +11522,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         JEFE
-    ====================================================== -->
+   
 
     <div class="card boss-arena"
     style="margin-top:15px">
@@ -12013,9 +11598,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         JUGADOR
-    ====================================================== -->
+    
 
     <div class="boss-player-stats">
 
@@ -12089,9 +11672,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PREGUNTA DEL JEFE
-    ====================================================== -->
+   
 
     <div class="card"
     style="margin-top:15px">
@@ -12151,9 +11732,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     RESULTADO BOSS
-========================================================= -->
+
 
 <section
 id="bossResult"
@@ -12302,9 +11881,7 @@ class="screen">
 
 
 
-<!-- =========================================================
-     ESTILOS BOSS
-========================================================= -->
+
 
 <style>
 
@@ -12696,16 +12273,10 @@ class="screen">
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — BOSS BATTLE
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   PREGUNTAS DEL JEFE
-========================================================= */
 
 const BOSS_QUESTIONS=[
 
@@ -12892,9 +12463,7 @@ const BOSS_QUESTIONS=[
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let bossGame={
 
@@ -12926,9 +12495,6 @@ let bossGame={
 
 
 
-/* =========================================================
-   INICIAR
-========================================================= */
 
 function startBossBattle(){
 
@@ -12987,9 +12553,7 @@ function startBossBattle(){
 
 
 
-/* =========================================================
-   CARGAR PREGUNTA
-========================================================= */
+
 
 function loadBossQuestion(){
 
@@ -13107,9 +12671,7 @@ function loadBossQuestion(){
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
+
 
 function answerBossQuestion(
     selected
@@ -13160,16 +12722,12 @@ function answerBossQuestion(
         );
 
 
-        /*
-         * DAÑO BASE
-         */
+       
 
         let damage=100;
 
 
-        /*
-         * BONUS DE COMBO
-         */
+       
 
         if(
             bossGame.combo>=2
@@ -13250,10 +12808,7 @@ function answerBossQuestion(
             "var(--green)";
 
 
-        /*
-         * ANIMACIÓN
-         */
-
+       
         const boss=
             document.getElementById(
                 "bossAvatar"
@@ -13291,9 +12846,7 @@ function answerBossQuestion(
         }
 
 
-        /*
-         * VICTORIA INMEDIATA
-         */
+       
 
         if(
             bossGame.bossHP<=0
@@ -13356,9 +12909,7 @@ function answerBossQuestion(
         );
 
 
-        /*
-         * ANIMACIÓN DEL JEFE
-         */
+       
 
         const arena=
             document.querySelector(
@@ -13379,9 +12930,7 @@ function answerBossQuestion(
         );
 
 
-        /*
-         * DERROTA
-         */
+       
 
         if(
             bossGame.playerHP<=0
@@ -13418,9 +12967,6 @@ function answerBossQuestion(
 
 
 
-/* =========================================================
-   SIGUIENTE ATAQUE
-========================================================= */
 
 function nextBossRound(){
 
@@ -13439,9 +12985,6 @@ function nextBossRound(){
 
 
 
-/* =========================================================
-   ACTUALIZAR INTERFAZ
-========================================================= */
 
 function updateBossInterface(){
 
@@ -13544,9 +13087,7 @@ function updateBossInterface(){
 
 
 
-/* =========================================================
-   FINAL
-========================================================= */
+
 
 function finishBossBattle(
     victory
@@ -13561,9 +13102,7 @@ function finishBossBattle(
     bossGame.finished=true;
 
 
-    /*
-     * BONUS
-     */
+   
 
     let bonus=0;
 
@@ -13591,9 +13130,7 @@ function finishBossBattle(
         }
 
 
-        /*
-         * LOGRO BOSS
-         */
+       
 
         if(
             !GAME_STATE.achievements.includes(
@@ -13610,9 +13147,7 @@ function finishBossBattle(
         }
 
 
-        /*
-         * ZONA COMPLETADA
-         */
+        
 
         if(
             !GAME_STATE.completedZones.includes(
@@ -13641,9 +13176,7 @@ function finishBossBattle(
     saveGame();
 
 
-    /*
-     * RESULTADO
-     */
+    
 
     document.getElementById(
         "bossResultDamage"
@@ -13733,9 +13266,7 @@ function finishBossBattle(
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitBossBattle(){
 
@@ -13771,9 +13302,7 @@ function exitBossBattle(){
 
 
 
-/* =========================================================
-   COMPATIBILIDAD
-========================================================= */
+
 
 function startBoss(){
 
@@ -13787,11 +13316,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 8/24
-     🎯 MISIONES DIARIAS
-========================================================= -->
+
 
 <section id="missions" class="screen">
 
@@ -13847,9 +13372,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PRESENTACIÓN
-    ====================================================== -->
+    
 
     <div
     class="card mission-hero"
@@ -13888,10 +13411,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO DIARIO
-    ====================================================== -->
-
+   
     <div
     class="card"
     style="margin-top:15px">
@@ -13934,9 +13454,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         LISTA DE MISIONES
-    ====================================================== -->
+  
 
     <div
     id="missionList"
@@ -13946,9 +13464,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RECOMPENSA DIARIA
-    ====================================================== -->
+    
 
     <div
     id="dailyBonusCard"
@@ -14003,9 +13519,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RACHA
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -14045,9 +13559,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS DE MISIONES
-========================================================= -->
 
 <style>
 
@@ -14352,16 +13863,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — MISIONES
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   MISIONES BASE
-========================================================= */
+
 
 const DAILY_MISSIONS=[
 
@@ -14452,9 +13959,6 @@ const DAILY_MISSIONS=[
 
 
 
-/* =========================================================
-   ESTADO DE MISIONES
-========================================================= */
 
 let missionState={
 
@@ -14470,9 +13974,6 @@ let missionState={
 
 
 
-/* =========================================================
-   FECHA ACTUAL
-========================================================= */
 
 function getMissionDate(){
 
@@ -14494,9 +13995,6 @@ function getMissionDate(){
 
 
 
-/* =========================================================
-   CARGAR MISIONES
-========================================================= */
 
 function loadMissionState(){
 
@@ -14530,9 +14028,7 @@ function loadMissionState(){
     }
 
 
-    /*
-     * NUEVO DÍA
-     */
+   
 
     if(
         missionState.date!==today
@@ -14591,9 +14087,6 @@ function loadMissionState(){
 
 
 
-/* =========================================================
-   GUARDAR
-========================================================= */
 
 function saveMissionState(){
 
@@ -14620,18 +14113,13 @@ function saveMissionState(){
 
 
 
-/* =========================================================
-   ACTUALIZAR PROGRESO
-========================================================= */
 
 function updateMissionProgress(){
 
     loadMissionState();
 
 
-    /*
-     * JUEGOS
-     */
+   
 
     missionState.progress.games=
         Math.max(
@@ -14640,9 +14128,7 @@ function updateMissionProgress(){
         );
 
 
-    /*
-     * RESPUESTAS CORRECTAS
-     */
+    
 
     missionState.progress.correct=
         Math.max(
@@ -14651,9 +14137,7 @@ function updateMissionProgress(){
         );
 
 
-    /*
-     * XP
-     */
+  
 
     missionState.progress.xp=
         Math.max(
@@ -14662,10 +14146,7 @@ function updateMissionProgress(){
         );
 
 
-    /*
-     * RACHA
-     */
-
+   
     missionState.progress.streak=
         Math.max(
             missionState.progress.streak||0,
@@ -14679,9 +14160,7 @@ function updateMissionProgress(){
 
 
 
-/* =========================================================
-   RENDERIZAR
-========================================================= */
+
 
 function renderMissions(){
 
@@ -14892,9 +14371,7 @@ function renderMissions(){
     );
 
 
-    /*
-     * PROGRESO
-     */
+    
 
     const text=
         document.getElementById(
@@ -14930,9 +14407,7 @@ function renderMissions(){
     }
 
 
-    /*
-     * MONEDAS
-     */
+   
 
     const coins=
         document.getElementById(
@@ -14948,9 +14423,7 @@ function renderMissions(){
     }
 
 
-    /*
-     * RACHA
-     */
+    
 
     const streak=
         document.getElementById(
@@ -14969,9 +14442,7 @@ function renderMissions(){
     }
 
 
-    /*
-     * BONUS
-     */
+    
 
     const allComplete=
         completed===
@@ -15019,9 +14490,6 @@ function renderMissions(){
 
 
 
-/* =========================================================
-   RECLAMAR MISIÓN
-========================================================= */
 
 function claimMission(id){
 
@@ -15109,9 +14577,6 @@ function claimMission(id){
 
 
 
-/* =========================================================
-   BONUS COMPLETO
-========================================================= */
 
 function claimDailyMissionBonus(){
 
@@ -15163,9 +14628,7 @@ function claimDailyMissionBonus(){
     );
 
 
-    /*
-     * LOGRO
-     */
+   
 
     if(
         !GAME_STATE.achievements.includes(
@@ -15206,9 +14669,7 @@ function claimDailyMissionBonus(){
 
 
 
-/* =========================================================
-   ABRIR MISIONES
-========================================================= */
+
 
 function openMissions(){
 
@@ -15226,9 +14687,7 @@ function openMissions(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitMissions(){
 
@@ -15240,9 +14699,7 @@ function exitMissions(){
 
 
 
-/* =========================================================
-   ACTUALIZACIÓN AUTOMÁTICA
-========================================================= */
+
 
 function refreshMissions(){
 
@@ -15279,9 +14736,7 @@ function refreshMissions(){
 }
 
 
-/*
- * Revisar periódicamente
- */
+
 
 setInterval(
     refreshMissions,
@@ -15294,11 +14749,6 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 9/24
-     🏆 LOGROS + MEDALLAS
-========================================================= -->
 
 <section id="achievements" class="screen">
 
@@ -15354,10 +14804,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
-
+    
     <div
     class="card achievement-header"
     style="margin-top:15px">
@@ -15434,9 +14881,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         FILTROS
-    ====================================================== -->
+   
 
     <div
     class="achievement-filters"
@@ -15509,9 +14954,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         LISTA
-    ====================================================== -->
+   
 
     <div
     id="achievementList"
@@ -15524,9 +14967,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -15867,16 +15308,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — LOGROS
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   CATÁLOGO DE LOGROS
-========================================================= */
 
 const ACHIEVEMENTS=[
 
@@ -16266,18 +15702,14 @@ const ACHIEVEMENTS=[
 
 
 
-/* =========================================================
-   FILTRO ACTUAL
-========================================================= */
+
 
 let currentAchievementFilter=
     "all";
 
 
 
-/* =========================================================
-   LOGROS RECLAMADOS
-========================================================= */
+
 
 function getUnlockedAchievements(){
 
@@ -16298,9 +15730,7 @@ function getUnlockedAchievements(){
 
 
 
-/* =========================================================
-   COMPROBAR LOGROS
-========================================================= */
+
 
 function checkAchievements(){
 
@@ -16311,9 +15741,7 @@ function checkAchievements(){
     ACHIEVEMENTS.forEach(
         achievement=>{
 
-            /*
-             * Si todavía no está desbloqueado
-             */
+           
 
             if(
                 !unlocked.includes(
@@ -16344,9 +15772,7 @@ function checkAchievements(){
                     );
 
 
-                    /*
-                     * Dar recompensa
-                     */
+                   
 
                     addXP(
                         achievement.rewardXP
@@ -16358,16 +15784,12 @@ function checkAchievements(){
                     );
 
 
-                    /*
-                     * Guardar
-                     */
+                   
 
                     saveGame();
 
 
-                    /*
-                     * Aviso
-                     */
+                    
 
                     toast(
                         "🏆 ¡LOGRO DESBLOQUEADO! "+
@@ -16393,9 +15815,7 @@ function checkAchievements(){
 
 
 
-/* =========================================================
-   RENDERIZAR
-========================================================= */
+
 
 function renderAchievements(){
 
@@ -16538,9 +15958,7 @@ function renderAchievements(){
     );
 
 
-    /*
-     * CONTADORES
-     */
+    
 
     const unlockedCount=
         ACHIEVEMENTS.filter(
@@ -16612,9 +16030,7 @@ function renderAchievements(){
 
 
 
-/* =========================================================
-   FILTRAR
-========================================================= */
+
 
 function filterAchievements(
     category,
@@ -16652,9 +16068,7 @@ function filterAchievements(
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
+
 
 function openAchievements(){
 
@@ -16672,9 +16086,6 @@ function openAchievements(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitAchievements(){
 
@@ -16686,9 +16097,6 @@ function exitAchievements(){
 
 
 
-/* =========================================================
-   COMPROBACIÓN AUTOMÁTICA
-========================================================= */
 
 setInterval(
     ()=>{
@@ -16717,11 +16125,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 10/24
-     👤 PERFIL + AVATAR
-========================================================= -->
+
 
 <section id="profile" class="screen">
 
@@ -16777,9 +16181,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         TARJETA PRINCIPAL DEL PERFIL
-    ====================================================== -->
+   
 
     <div
     class="card profile-main"
@@ -16868,9 +16270,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         NIVEL
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -16941,9 +16341,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         EDITAR NOMBRE
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -16991,9 +16389,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         AVATARES
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -17036,9 +16432,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         TÍTULOS
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -17075,9 +16469,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         TARJETA IDENTIDAD
-    ====================================================== -->
+   
 
     <div
     class="redtech-id-card"
@@ -17178,9 +16570,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS PERFIL
-========================================================= -->
+
 
 <style>
 
@@ -17755,16 +17145,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — PERFIL
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   AVATARES
-========================================================= */
+
 
 const REDTECH_AVATARS=[
 
@@ -17939,9 +17325,7 @@ const REDTECH_AVATARS=[
 
 
 
-/* =========================================================
-   TÍTULOS
-========================================================= */
+
 
 const REDTECH_TITLES=[
 
@@ -18032,9 +17416,7 @@ const REDTECH_TITLES=[
 
 
 
-/* =========================================================
-   ESTADO DEL PERFIL
-========================================================= */
+
 
 let profileState={
 
@@ -18052,9 +17434,6 @@ let profileState={
 
 
 
-/* =========================================================
-   CARGAR PERFIL
-========================================================= */
 
 function loadProfileState(){
 
@@ -18106,9 +17485,6 @@ function loadProfileState(){
 
 
 
-/* =========================================================
-   GUARDAR PERFIL
-========================================================= */
 
 function saveProfileState(){
 
@@ -18135,9 +17511,7 @@ function saveProfileState(){
 
 
 
-/* =========================================================
-   NIVEL
-========================================================= */
+
 
 function getPlayerLevel(){
 
@@ -18147,9 +17521,7 @@ function getPlayerLevel(){
         );
 
 
-    /*
-     * Cada nivel requiere más XP
-     */
+    
 
     let level=1;
 
@@ -18192,9 +17564,7 @@ function getPlayerLevel(){
 
 
 
-/* =========================================================
-   TÍTULO POR NIVEL
-========================================================= */
+
 
 function getAvailableTitles(){
 
@@ -18212,9 +17582,6 @@ function getAvailableTitles(){
 
 
 
-/* =========================================================
-   COMPRAR AVATAR
-========================================================= */
 
 function buyAvatar(id){
 
@@ -18284,9 +17651,7 @@ function buyAvatar(id){
 
 
 
-/* =========================================================
-   SELECCIONAR AVATAR
-========================================================= */
+
 
 function selectAvatar(id){
 
@@ -18321,9 +17686,7 @@ function selectAvatar(id){
 
 
 
-/* =========================================================
-   SELECCIONAR TÍTULO
-========================================================= */
+
 
 function selectProfileTitle(id){
 
@@ -18375,9 +17738,6 @@ function selectProfileTitle(id){
 
 
 
-/* =========================================================
-   GUARDAR NOMBRE
-========================================================= */
 
 function saveProfileName(){
 
@@ -18429,9 +17789,7 @@ function saveProfileName(){
 
 
 
-/* =========================================================
-   RENDER PERFIL
-========================================================= */
+
 
 function renderProfile(){
 
@@ -18460,9 +17818,7 @@ function renderProfile(){
         REDTECH_TITLES[0];
 
 
-    /*
-     * DATOS PRINCIPALES
-     */
+   
 
     setText(
         "profileName",
@@ -18520,9 +17876,7 @@ function renderProfile(){
     );
 
 
-    /*
-     * NIVEL
-     */
+    
 
     setText(
         "profileLevelTitle",
@@ -18572,9 +17926,7 @@ function renderProfile(){
     }
 
 
-    /*
-     * ID
-     */
+    
 
     setText(
         "idName",
@@ -18608,9 +17960,7 @@ function renderProfile(){
     );
 
 
-    /*
-     * INPUT
-     */
+   
 
     const input=
         document.getElementById(
@@ -18638,9 +17988,7 @@ function renderProfile(){
 
 
 
-/* =========================================================
-   AVATARES
-========================================================= */
+
 
 function renderAvatars(){
 
@@ -18767,9 +18115,7 @@ function renderAvatars(){
 
 
 
-/* =========================================================
-   TÍTULOS
-========================================================= */
+
 
 function renderTitles(){
 
@@ -18893,9 +18239,7 @@ function renderTitles(){
 
 
 
-/* =========================================================
-   CÓDIGO DE PERFIL
-========================================================= */
+
 
 function createProfileCode(){
 
@@ -18942,9 +18286,7 @@ function createProfileCode(){
 
 
 
-/* =========================================================
-   ABRIR PERFIL
-========================================================= */
+
 
 function openProfile(){
 
@@ -18962,9 +18304,6 @@ function openProfile(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitProfile(){
 
@@ -18976,9 +18315,7 @@ function exitProfile(){
 
 
 
-/* =========================================================
-   FUNCIÓN AUXILIAR
-========================================================= */
+
 
 function setText(
     id,
@@ -19002,9 +18339,7 @@ function setText(
 
 
 
-/* =========================================================
-   CARGAR AL INICIAR
-========================================================= */
+
 
 loadProfileState();
 
@@ -19014,11 +18349,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 11/24
-     🗺️ MAPA DE NIVELES + MISIONES
-========================================================= -->
+
 
 <section id="map" class="screen">
 
@@ -19074,10 +18405,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CABECERA DEL MAPA
-    ====================================================== -->
-
+    
     <div
     class="card map-hero"
     style="margin-top:15px">
@@ -19120,9 +18448,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
+    
 
     <div
     class="map-stats"
@@ -19190,10 +18516,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MAPA
-    ====================================================== -->
-
+    
     <div
     class="card"
     style="margin-top:15px">
@@ -19239,9 +18562,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MISIONES
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -19290,9 +18611,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -19398,9 +18717,7 @@ console.log(
 }
 
 
-/* =========================================================
-   MAPA
-========================================================= */
+
 
 .level-map{
 
@@ -19608,9 +18925,7 @@ console.log(
 }
 
 
-/* =========================================================
-   MISIONES
-========================================================= */
+
 
 .mission-list{
 
@@ -19832,16 +19147,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — MAPA
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   ZONAS DEL MAPA
-========================================================= */
+
 
 const REDTECH_ZONES=[
 
@@ -19984,9 +19295,6 @@ const REDTECH_ZONES=[
 
 
 
-/* =========================================================
-   MISIONES
-========================================================= */
 
 const REDTECH_MISSIONS=[
 
@@ -20119,9 +19427,7 @@ const REDTECH_MISSIONS=[
 
 
 
-/* =========================================================
-   PROGRESO DE MISIONES
-========================================================= */
+
 
 function getMissionProgress(
     mission
@@ -20189,9 +19495,7 @@ function getMissionProgress(
 
 
 
-/* =========================================================
-   MISIONES COMPLETADAS
-========================================================= */
+
 
 function getCompletedMissions(){
 
@@ -20212,9 +19516,7 @@ function getCompletedMissions(){
 
 
 
-/* =========================================================
-   COMPROBAR MISIONES
-========================================================= */
+
 
 function checkMissions(){
 
@@ -20287,9 +19589,6 @@ function checkMissions(){
 
 
 
-/* =========================================================
-   RENDERIZAR MISIONES
-========================================================= */
 
 function renderMissions(){
 
@@ -20461,9 +19760,7 @@ function renderMissions(){
 
 
 
-/* =========================================================
-   ZONAS COMPLETADAS
-========================================================= */
+
 
 function getCompletedZones(){
 
@@ -20484,17 +19781,12 @@ function getCompletedZones(){
 
 
 
-/* =========================================================
-   ZONA DESBLOQUEADA
-========================================================= */
 
 function isZoneUnlocked(
     zoneId
 ){
 
-    /*
-     * Primera zona siempre disponible.
-     */
+    
 
     if(
         zoneId===1
@@ -20509,10 +19801,7 @@ function isZoneUnlocked(
         getCompletedZones();
 
 
-    /*
-     * Una zona se desbloquea
-     * cuando la anterior está completa.
-     */
+    
 
     return completed.includes(
         zoneId-1
@@ -20522,9 +19811,7 @@ function isZoneUnlocked(
 
 
 
-/* =========================================================
-   ABRIR ZONA
-========================================================= */
+
 
 function openZone(
     zoneId
@@ -20556,10 +19843,7 @@ function openZone(
     }
 
 
-    /*
-     * Aquí conectaremos cada zona
-     * con sus juegos correspondientes.
-     */
+   
 
     switch(
         zoneId
@@ -20714,9 +19998,7 @@ function openZone(
 
 
 
-/* =========================================================
-   RENDERIZAR MAPA
-========================================================= */
+
 
 function renderMap(){
 
@@ -20915,9 +20197,7 @@ function renderMap(){
     );
 
 
-    /*
-     * PROGRESO
-     */
+    
 
     const percentage=
         Math.round(
@@ -20980,9 +20260,7 @@ function renderMap(){
 
 
 
-/* =========================================================
-   MARCAR ZONA COMO COMPLETADA
-========================================================= */
+
 
 function completeZone(
     zoneId
@@ -21046,9 +20324,7 @@ function completeZone(
 
 
 
-/* =========================================================
-   ABRIR MAPA
-========================================================= */
+
 
 function openMap(){
 
@@ -21066,9 +20342,7 @@ function openMap(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitMap(){
 
@@ -21080,9 +20354,7 @@ function exitMap(){
 
 
 
-/* =========================================================
-   ACTUALIZACIÓN AUTOMÁTICA
-========================================================= */
+
 
 setInterval(
     ()=>{
@@ -21126,11 +20398,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 12/24
-     🖥️ PC MASTER — LABORATORIO INTERACTIVO
-========================================================= -->
+
 
 <section id="pcmaster" class="screen">
 
@@ -21186,9 +20454,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PRESENTACIÓN
-    ====================================================== -->
+   
 
     <div
     class="card pcmaster-hero"
@@ -21231,9 +20497,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MODO DE JUEGO
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -21309,9 +20573,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ÁREA DEL JUEGO
-    ====================================================== -->
+   
 
     <div
     id="pcMasterGame"
@@ -21406,9 +20668,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -21441,9 +20701,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RECOMPENSAS
-    ====================================================== -->
+   
 
     <div
     class="pcmaster-rewards"
@@ -21499,9 +20757,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -21935,16 +21191,10 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — PC MASTER
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   BANCO DE PREGUNTAS
-========================================================= */
 
 const PC_MASTER_QUESTIONS=[
 
@@ -22312,9 +21562,7 @@ const PC_MASTER_QUESTIONS=[
 
 
 
-/* =========================================================
-   ESTADO DEL JUEGO
-========================================================= */
+
 
 let pcMasterState={
 
@@ -22344,9 +21592,7 @@ let pcMasterState={
 
 
 
-/* =========================================================
-   INICIAR MODO
-========================================================= */
+
 
 function startPCMaster(
     mode,
@@ -22384,9 +21630,7 @@ function startPCMaster(
 
 
 
-/* =========================================================
-   PREPARAR PREGUNTAS
-========================================================= */
+
 
 function preparePCMaster(){
 
@@ -22398,10 +21642,7 @@ function preparePCMaster(){
         );
 
 
-    /*
-     * Si hay pocas preguntas del modo,
-     * completamos con preguntas generales.
-     */
+    
 
     if(
         questions.length<10
@@ -22424,9 +21665,7 @@ function preparePCMaster(){
     }
 
 
-    /*
-     * Mezclar preguntas
-     */
+    
 
     questions=
         shuffleArray(
@@ -22434,10 +21673,7 @@ function preparePCMaster(){
         );
 
 
-    /*
-     * Tomar 10
-     */
-
+   
     pcMasterState.questions=
         questions.slice(
             0,
@@ -22448,9 +21684,6 @@ function preparePCMaster(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
 
 function beginPCMaster(){
 
@@ -22505,9 +21738,7 @@ function beginPCMaster(){
 
 
 
-/* =========================================================
-   MOSTRAR PREGUNTA
-========================================================= */
+
 
 function showPCMasterQuestion(){
 
@@ -22570,9 +21801,7 @@ function showPCMasterQuestion(){
     options.innerHTML="";
 
 
-    /*
-     * Mezclar opciones
-     */
+    
 
     const shuffled=
         shuffleArray(
@@ -22624,9 +21853,6 @@ function showPCMasterQuestion(){
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
 
 function answerPCMaster(
     selected,
@@ -22764,9 +21990,7 @@ function answerPCMaster(
 
 
 
-/* =========================================================
-   TEMPORIZADOR
-========================================================= */
+
 
 function startPCMasterTimer(){
 
@@ -22812,9 +22036,7 @@ function startPCMasterTimer(){
 
 
 
-/* =========================================================
-   TIEMPO AGOTADO
-========================================================= */
+
 
 function timeOutPCMaster(){
 
@@ -22888,9 +22110,7 @@ function timeOutPCMaster(){
 
 
 
-/* =========================================================
-   DETENER TEMPORIZADOR
-========================================================= */
+
 
 function stopPCMasterTimer(){
 
@@ -22912,9 +22132,6 @@ function stopPCMasterTimer(){
 
 
 
-/* =========================================================
-   PROGRESO
-========================================================= */
 
 function updatePCMasterProgress(){
 
@@ -22963,9 +22180,7 @@ function updatePCMasterProgress(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishPCMaster(){
 
@@ -22979,9 +22194,7 @@ function finishPCMaster(){
     updatePCMasterProgress();
 
 
-    /*
-     * Recompensa extra por completar
-     */
+    
 
     const completionXP=
         pcMasterState.correct*
@@ -23030,10 +22243,7 @@ function finishPCMaster(){
         pcMasterState.correct;
 
 
-    /*
-     * Marcar zona 3 como completada
-     * si se obtiene al menos 6 respuestas.
-     */
+    
 
     if(
         pcMasterState.correct>=6
@@ -23114,9 +22324,7 @@ function finishPCMaster(){
     );
 
 
-    /*
-     * Actualizar sistemas
-     */
+    
 
     if(
         typeof checkMissions===
@@ -23151,9 +22359,6 @@ function finishPCMaster(){
 
 
 
-/* =========================================================
-   REINICIAR INTERFAZ
-========================================================= */
 
 function resetPCMasterUI(){
 
@@ -23244,9 +22449,7 @@ function resetPCMasterUI(){
 
 
 
-/* =========================================================
-   ABRIR PC MASTER
-========================================================= */
+
 
 function openPCMaster(){
 
@@ -23267,9 +22470,7 @@ function openPCMaster(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitPCMaster(){
 
@@ -23298,9 +22499,6 @@ function exitPCMaster(){
 
 
 
-/* =========================================================
-   MEZCLADOR
-========================================================= */
 
 function shuffleArray(
     array
@@ -23341,11 +22539,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 13/24
-     🌐 NETWORK CITY — CONSTRUCTOR DE REDES
-========================================================= -->
+
 
 <section id="networkCity" class="screen">
 
@@ -23401,9 +22595,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+   
 
     <div
     class="card network-hero"
@@ -23446,10 +22638,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         DESAFÍOS
-    ====================================================== -->
-
+    
     <div
     class="card"
     style="margin-top:15px">
@@ -23524,9 +22713,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         JUEGO
-    ====================================================== -->
+   
 
     <div
     class="card network-game"
@@ -23641,9 +22828,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
+   
 
     <div
     class="network-stats"
@@ -23711,9 +22896,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -23749,9 +22932,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -24290,16 +23471,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — NETWORK CITY
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   PREGUNTAS
-========================================================= */
+
 
 const NETWORK_QUESTIONS=[
 
@@ -24594,9 +23771,6 @@ const NETWORK_QUESTIONS=[
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
 
 let networkState={
 
@@ -24628,9 +23802,6 @@ let networkState={
 
 
 
-/* =========================================================
-   CAMBIAR MODO
-========================================================= */
 
 function startNetworkGame(
     mode,
@@ -24668,9 +23839,6 @@ function startNetworkGame(
 
 
 
-/* =========================================================
-   PREPARAR
-========================================================= */
 
 function prepareNetwork(){
 
@@ -24711,9 +23879,7 @@ function prepareNetwork(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
+
 
 function beginNetworkGame(){
 
@@ -24752,9 +23918,6 @@ function beginNetworkGame(){
 
 
 
-/* =========================================================
-   MOSTRAR
-========================================================= */
 
 function showNetworkQuestion(){
 
@@ -24862,9 +24025,7 @@ function showNetworkQuestion(){
 
 
 
-/* =========================================================
-   DIAGRAMA
-========================================================= */
+
 
 function renderNetworkDiagram(
     icons
@@ -24941,9 +24102,7 @@ function renderNetworkDiagram(
 
 
 
-/* =========================================================
-   RESPUESTA
-========================================================= */
+
 
 function answerNetwork(
     selected,
@@ -25067,9 +24226,6 @@ function answerNetwork(
 
 
 
-/* =========================================================
-   TIMER
-========================================================= */
 
 function startNetworkTimer(){
 
@@ -25115,9 +24271,7 @@ function startNetworkTimer(){
 
 
 
-/* =========================================================
-   TIMEOUT
-========================================================= */
+
 
 function networkTimeout(){
 
@@ -25189,9 +24343,6 @@ function networkTimeout(){
 
 
 
-/* =========================================================
-   STOP TIMER
-========================================================= */
 
 function stopNetworkTimer(){
 
@@ -25213,9 +24364,7 @@ function stopNetworkTimer(){
 
 
 
-/* =========================================================
-   PROGRESO
-========================================================= */
+
 
 function updateNetworkProgress(){
 
@@ -25264,9 +24413,6 @@ function updateNetworkProgress(){
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
 
 function updateNetworkStats(){
 
@@ -25306,9 +24452,7 @@ function updateNetworkStats(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishNetworkGame(){
 
@@ -25365,10 +24509,7 @@ function finishNetworkGame(){
         networkState.correct;
 
 
-    /*
-     * Si domina el desafío,
-     * completa Network City.
-     */
+    
 
     if(
         networkState.correct>=5
@@ -25470,9 +24611,6 @@ function finishNetworkGame(){
 
 
 
-/* =========================================================
-   RESET
-========================================================= */
 
 function resetNetworkUI(){
 
@@ -25606,9 +24744,7 @@ function resetNetworkUI(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
+
 
 function openLANBuilder(){
 
@@ -25623,9 +24759,6 @@ function openLANBuilder(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitNetworkCity(){
 
@@ -25659,11 +24792,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 14/24
-     🧩 TECH MEMORY — MEMORIA DE COMPONENTES
-========================================================= -->
+
 
 <section id="techMemory" class="screen">
 
@@ -25719,10 +24848,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
+    
     <div
     class="card memory-hero"
     style="margin-top:15px">
@@ -25764,10 +24890,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MODOS
-    ====================================================== -->
-
+   
     <div
     class="card"
     style="margin-top:15px">
@@ -25842,9 +24965,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PANEL DEL JUEGO
-    ====================================================== -->
+  
 
     <div
     class="card memory-game"
@@ -25891,8 +25012,7 @@ console.log(
         </div>
 
 
-        <!-- CONTROLES -->
-
+        
         <div
         class="memory-controls">
 
@@ -25926,10 +25046,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
-
+   
     <div
     class="card"
     style="margin-top:15px">
@@ -25962,10 +25079,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RECOMPENSAS
-    ====================================================== -->
-
+    
     <div
     class="memory-rewards"
     style="margin-top:15px">
@@ -26035,9 +25149,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
 
 <style>
 
@@ -26509,16 +25620,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — TECH MEMORY
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   COMPONENTES
-========================================================= */
 
 const MEMORY_COMPONENTS=[
 
@@ -26576,9 +25682,6 @@ const MEMORY_COMPONENTS=[
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
 
 let memoryState={
 
@@ -26614,9 +25717,6 @@ let memoryState={
 
 
 
-/* =========================================================
-   DIFICULTAD
-========================================================= */
 
 function setMemoryDifficulty(
     difficulty,
@@ -26675,9 +25775,7 @@ function setMemoryDifficulty(
 
 
 
-/* =========================================================
-   PREPARAR CARTAS
-========================================================= */
+
 
 function prepareMemoryCards(){
 
@@ -26734,9 +25832,7 @@ function prepareMemoryCards(){
 
 
 
-/* =========================================================
-   CREAR TABLERO
-========================================================= */
+
 
 function renderMemoryBoard(){
 
@@ -26817,9 +25913,7 @@ function renderMemoryBoard(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
+
 
 function beginTechMemory(){
 
@@ -26874,9 +25968,6 @@ function beginTechMemory(){
 
 
 
-/* =========================================================
-   VOLTEAR CARTA
-========================================================= */
 
 function flipMemoryCard(
     index,
@@ -26941,9 +26032,6 @@ function flipMemoryCard(
 
 
 
-/* =========================================================
-   COMPROBAR PAREJA
-========================================================= */
 
 function checkMemoryPair(){
 
@@ -27084,9 +26172,7 @@ function checkMemoryPair(){
 
 
 
-/* =========================================================
-   TIMER
-========================================================= */
+
 
 function startMemoryTimer(){
 
@@ -27107,9 +26193,7 @@ function startMemoryTimer(){
 
 
 
-/* =========================================================
-   TIMER DISPLAY
-========================================================= */
+
 
 function updateMemoryTimer(){
 
@@ -27139,9 +26223,6 @@ function updateMemoryTimer(){
 
 
 
-/* =========================================================
-   STOP TIMER
-========================================================= */
 
 function stopMemoryTimer(){
 
@@ -27163,9 +26244,7 @@ function stopMemoryTimer(){
 
 
 
-/* =========================================================
-   UI
-========================================================= */
+
 
 function updateMemoryUI(){
 
@@ -27203,9 +26282,7 @@ function updateMemoryUI(){
     }
 
 
-    /*
-     * Precisión aproximada
-     */
+    
 
     let attempts=
         memoryState.moves;
@@ -27252,9 +26329,7 @@ function updateMemoryUI(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishTechMemory(){
 
@@ -27264,18 +26339,13 @@ function finishTechMemory(){
     memoryState.active=false;
 
 
-    /*
-     * XP base
-     */
 
     let xp=
         memoryState.pairs*
         15;
 
 
-    /*
-     * Bonus por pocos movimientos
-     */
+    
 
     const idealMoves=
         memoryState.pairs;
@@ -27292,9 +26362,7 @@ function finishTechMemory(){
     }
 
 
-    /*
-     * Bonus por dificultad
-     */
+    
 
     if(
         memoryState.difficulty===
@@ -27325,10 +26393,7 @@ function finishTechMemory(){
         );
 
 
-    /*
-     * Guardar en progreso global
-     */
-
+    
     addXP(
         xp
     );
@@ -27353,9 +26418,7 @@ function finishTechMemory(){
         memoryState.pairs;
 
 
-    /*
-     * Completar zona si domina
-     */
+    
 
     if(
         memoryState.mistakes<=
@@ -27438,9 +26501,7 @@ function finishTechMemory(){
 
 
 
-/* =========================================================
-   REINICIAR
-========================================================= */
+
 
 function resetTechMemory(){
 
@@ -27543,9 +26604,6 @@ function resetTechMemory(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
 
 function openTechMemory(){
 
@@ -27560,9 +26618,7 @@ function openTechMemory(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitTechMemory(){
 
@@ -27595,11 +26651,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 15/24
-     🖥️ PC BUILDER — ARMA TU COMPUTADORA
-========================================================= -->
+
 
 <section id="pcBuilder" class="screen">
 
@@ -27655,10 +26707,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
+    
     <div
     class="card builder-hero"
     style="margin-top:15px">
@@ -27700,10 +26749,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MODO
-    ====================================================== -->
-
+   
     <div
     class="card"
     style="margin-top:15px">
@@ -27802,9 +26848,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         COMPONENTES
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -27846,9 +26890,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         COMPONENTES DISPONIBLES
-    ====================================================== -->
+  
 
     <div
     class="card"
@@ -27882,9 +26924,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RESUMEN
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -28006,10 +27046,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RECOMPENSAS
-    ====================================================== -->
-
+   
     <div
     class="builder-rewards"
     style="margin-top:15px">
@@ -28079,9 +27116,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
 
 <style>
 
@@ -28658,16 +27692,10 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — PC BUILDER
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   COMPONENTES
-========================================================= */
 
 const PC_BUILDER_PARTS={
 
@@ -28902,9 +27930,7 @@ const PC_BUILDER_PARTS={
 
 
 
-/* =========================================================
-   CATEGORÍAS
-========================================================= */
+
 
 const PC_BUILDER_CATEGORIES=[
 
@@ -28954,9 +27980,7 @@ const PC_BUILDER_CATEGORIES=[
 
 
 
-/* =========================================================
-   MODOS
-========================================================= */
+
 
 const PC_BUILDER_MODES={
 
@@ -28996,9 +28020,7 @@ const PC_BUILDER_MODES={
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let builderState={
 
@@ -29018,9 +28040,6 @@ let builderState={
 
 
 
-/* =========================================================
-   CAMBIAR MODO
-========================================================= */
 
 function setBuilderMode(
     mode,
@@ -29072,9 +28091,7 @@ function setBuilderMode(
 
 
 
-/* =========================================================
-   INICIAR
-========================================================= */
+
 
 function initPCBuilder(){
 
@@ -29088,9 +28105,7 @@ function initPCBuilder(){
 
 
 
-/* =========================================================
-   SLOTS
-========================================================= */
+
 
 function renderBuilderSlots(){
 
@@ -29221,9 +28236,7 @@ function renderBuilderSlots(){
 
 
 
-/* =========================================================
-   PARTES
-========================================================= */
+
 
 function renderBuilderParts(
     category="cpu"
@@ -29352,9 +28365,7 @@ function renderBuilderParts(
 
 
 
-/* =========================================================
-   SELECCIONAR
-========================================================= */
+
 
 function selectBuilderPart(
     category,
@@ -29389,9 +28400,7 @@ function selectBuilderPart(
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
+
 
 function updateBuilderStats(){
 
@@ -29526,9 +28535,7 @@ function updateBuilderStats(){
 
 
 
-/* =========================================================
-   COMPROBAR
-========================================================= */
+
 
 function checkPCBuild(){
 
@@ -29588,10 +28595,7 @@ function checkPCBuild(){
     );
 
 
-    /*
-     * La PSU indica capacidad
-     * disponible.
-     */
+    
 
     const psu=
         builderState.selected
@@ -29606,10 +28610,7 @@ function checkPCBuild(){
         0;
 
 
-    /*
-     * El consumo real de los
-     * componentes principales.
-     */
+   
 
     const actualConsumption=
         selected
@@ -29735,9 +28736,7 @@ function checkPCBuild(){
         );
 
 
-        /*
-         * Recompensas globales
-         */
+       
 
         addXP(
             builderState.xp
@@ -29763,11 +28762,7 @@ function checkPCBuild(){
             1;
 
 
-        /*
-         * Desbloquea la zona
-         * del constructor.
-         */
-
+        
         if(
             typeof completeZone===
             "function"
@@ -29873,9 +28868,7 @@ function checkPCBuild(){
 
 
 
-/* =========================================================
-   REINICIAR
-========================================================= */
+
 
 function resetPCBuilder(){
 
@@ -29926,9 +28919,6 @@ function resetPCBuilder(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
 
 function openPCBuilder(){
 
@@ -29943,9 +28933,6 @@ function openPCBuilder(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitPCBuilder(){
 
@@ -29966,10 +28953,6 @@ function exitPCBuilder(){
 }
 
 
-
-/* =========================================================
-   INICIO
-========================================================= */
 
 if(
     document.readyState===
@@ -29995,11 +28978,7 @@ console.log(
     "🖥️ PC BUILDER cargado correctamente."
 );
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 16/24
-     🛡️ CYBER DEFENDER — DEFENSA DIGITAL
-========================================================= -->
+
 
 <section id="cyberDefender" class="screen">
 
@@ -30055,10 +29034,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
+   
     <div
     class="card cyber-hero"
     style="margin-top:15px">
@@ -30100,9 +29076,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MODOS
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -30177,10 +29151,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MISIÓN
-    ====================================================== -->
-
+    
     <div
     class="card cyber-game"
     style="margin-top:15px">
@@ -30270,10 +29241,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
-
+    
     <div
     class="card"
     style="margin-top:15px">
@@ -30306,10 +29274,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
-
+   
     <div
     class="cyber-stats"
     style="margin-top:15px">
@@ -30376,10 +29341,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CONSEJO
-    ====================================================== -->
-
+   
     <div
     class="card cyber-tip"
     style="margin-top:15px">
@@ -30412,9 +29374,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -30860,16 +29820,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — CYBER DEFENDER
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   ESCENARIOS
-========================================================= */
+
 
 const CYBER_SCENARIOS={
 
@@ -31198,9 +30153,7 @@ const CYBER_SCENARIOS={
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let cyberState={
 
@@ -31230,9 +30183,7 @@ let cyberState={
 
 
 
-/* =========================================================
-   CAMBIAR MODO
-========================================================= */
+
 
 function setCyberMode(
     mode,
@@ -31270,9 +30221,7 @@ function setCyberMode(
 
 
 
-/* =========================================================
-   PREPARAR
-========================================================= */
+
 
 function prepareCyberQuestions(){
 
@@ -31286,11 +30235,7 @@ function prepareCyberQuestions(){
         );
 
 
-    /*
-     * Cada modo tem 4 escenarios.
-     * Repetimos de forma controlada
-     * para que la misión siempre tenga 8.
-     */
+   
 
     while(
         cyberState.questions.length<
@@ -31320,9 +30265,6 @@ function prepareCyberQuestions(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
 
 function beginCyberDefender(){
 
@@ -31360,9 +30302,7 @@ function beginCyberDefender(){
 
 
 
-/* =========================================================
-   MOSTRAR
-========================================================= */
+
 
 function showCyberQuestion(){
 
@@ -31462,9 +30402,7 @@ function showCyberQuestion(){
 
 
 
-/* =========================================================
-   PISTAS
-========================================================= */
+
 
 function renderCyberClues(
     clues
@@ -31507,9 +30445,6 @@ function renderCyberClues(
 
 
 
-/* =========================================================
-   RESPUESTA
-========================================================= */
 
 function answerCyber(
     selected,
@@ -31628,10 +30563,7 @@ function answerCyber(
     updateCyberStats();
 
 
-    /*
-     * Si pierde todas las vidas,
-     * termina la misión.
-     */
+   
 
     if(
         cyberState.lives<=0
@@ -31668,9 +30600,7 @@ function answerCyber(
 
 
 
-/* =========================================================
-   PROGRESO
-========================================================= */
+
 
 function updateCyberProgress(){
 
@@ -31717,9 +30647,7 @@ function updateCyberProgress(){
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
+
 
 function updateCyberStats(){
 
@@ -31765,9 +30693,6 @@ function updateCyberStats(){
 
 
 
-/* =========================================================
-   CONSEJOS
-========================================================= */
 
 function updateCyberTip(){
 
@@ -31796,9 +30721,7 @@ function updateCyberTip(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishCyberDefender(){
 
@@ -31811,9 +30734,7 @@ function finishCyberDefender(){
             .questions.length;
 
 
-    /*
-     * Bonus por completar
-     */
+    
 
     let bonus=0;
 
@@ -31876,10 +30797,7 @@ function finishCyberDefender(){
         cyberState.correct;
 
 
-    /*
-     * Completa la zona si obtiene
-     * suficientes respuestas correctas.
-     */
+    
 
     if(
         cyberState.correct>=5
@@ -31971,9 +30889,6 @@ function finishCyberDefender(){
 
 
 
-/* =========================================================
-   RESET
-========================================================= */
 
 function resetCyberUI(){
 
@@ -32102,9 +31017,6 @@ function resetCyberUI(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
 
 function openCyberDefender(){
 
@@ -32119,9 +31031,7 @@ function openCyberDefender(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitCyberDefender(){
 
@@ -32151,11 +31061,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 17/24
-     🧩 CODE MASTER — RETOS DE PROGRAMACIÓN
-========================================================= -->
+
 
 <section id="codeMaster" class="screen">
 
@@ -32211,9 +31117,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    
 
     <div
     class="card code-hero"
@@ -32256,9 +31160,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         NIVELES
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -32358,9 +31260,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RETO
-    ====================================================== -->
+  
 
     <div
     class="card code-challenge"
@@ -32462,9 +31362,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
+   
 
     <div
     class="card"
@@ -32498,10 +31396,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
-
+    
     <div
     class="code-stats"
     style="margin-top:15px">
@@ -32568,10 +31463,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CONSEJO
-    ====================================================== -->
-
+    
     <div
     class="card code-tip"
     style="margin-top:15px">
@@ -32604,9 +31496,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
 
 <style>
 
@@ -33100,16 +31989,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — CODE MASTER
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   RETOS
-========================================================= */
+
 
 const CODE_MASTER_CHALLENGES={
 
@@ -33544,9 +32429,7 @@ const CODE_MASTER_CHALLENGES={
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let codeState={
 
@@ -33578,9 +32461,6 @@ let codeState={
 
 
 
-/* =========================================================
-   CONFIGURACIÓN
-========================================================= */
 
 const CODE_DIFFICULTY={
 
@@ -33606,9 +32486,7 @@ const CODE_DIFFICULTY={
 
 
 
-/* =========================================================
-   CAMBIAR DIFICULTAD
-========================================================= */
+
 
 function setCodeDifficulty(
     difficulty,
@@ -33654,9 +32532,6 @@ function setCodeDifficulty(
 
 
 
-/* =========================================================
-   PREPARAR RETOS
-========================================================= */
 
 function prepareCodeChallenges(){
 
@@ -33676,9 +32551,7 @@ function prepareCodeChallenges(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
+
 
 function beginCodeMaster(){
 
@@ -33719,9 +32592,7 @@ function beginCodeMaster(){
 
 
 
-/* =========================================================
-   MOSTRAR RETO
-========================================================= */
+
 
 function showCodeChallenge(){
 
@@ -33801,9 +32672,7 @@ function showCodeChallenge(){
 
 
 
-/* =========================================================
-   CÓDIGO
-========================================================= */
+
 
 function renderCodeBlock(
     lines
@@ -33865,9 +32734,6 @@ function renderCodeBlock(
 
 
 
-/* =========================================================
-   OPCIONES
-========================================================= */
 
 function renderCodeOptions(
     options
@@ -33922,9 +32788,7 @@ function renderCodeOptions(
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
+
 
 function answerCode(
     selected,
@@ -34089,9 +32953,7 @@ function answerCode(
 
 
 
-/* =========================================================
-   TEMPORIZADOR
-========================================================= */
+
 
 function startCodeTimer(){
 
@@ -34144,9 +33006,7 @@ function startCodeTimer(){
 
 
 
-/* =========================================================
-   MOSTRAR TIEMPO
-========================================================= */
+
 
 function updateCodeTimer(){
 
@@ -34193,9 +33053,7 @@ function updateCodeTimer(){
 
 
 
-/* =========================================================
-   TIEMPO AGOTADO
-========================================================= */
+
 
 function timeOutCode(){
 
@@ -34274,9 +33132,7 @@ function timeOutCode(){
 
 
 
-/* =========================================================
-   PROGRESO
-========================================================= */
+
 
 function updateCodeProgress(){
 
@@ -34323,9 +33179,7 @@ function updateCodeProgress(){
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
+
 
 function updateCodeStats(){
 
@@ -34365,9 +33219,6 @@ function updateCodeStats(){
 
 
 
-/* =========================================================
-   CONSEJOS
-========================================================= */
 
 function updateCodeTip(){
 
@@ -34396,9 +33247,6 @@ function updateCodeTip(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
 
 function finishCodeMaster(){
 
@@ -34477,9 +33325,7 @@ function finishCodeMaster(){
         codeState.correct;
 
 
-    /*
-     * Desbloqueo de zona.
-     */
+   
 
     if(
         codeState.correct>=3 &&
@@ -34566,9 +33412,7 @@ function finishCodeMaster(){
 
 
 
-/* =========================================================
-   REINICIAR
-========================================================= */
+
 
 function resetCodeMaster(){
 
@@ -34717,9 +33561,7 @@ function resetCodeMaster(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
+
 
 function openCodeMaster(){
 
@@ -34734,9 +33576,7 @@ function openCodeMaster(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitCodeMaster(){
 
@@ -34767,9 +33607,7 @@ function exitCodeMaster(){
 
 
 
-/* =========================================================
-   ESCAPAR HTML
-========================================================= */
+
 
 function escapeHTML(
     text
@@ -34799,11 +33637,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 18/24
-     🧠 MEMORY MASTER — MEMORIA DIGITAL
-========================================================= -->
+
 
 <section id="memoryMaster" class="screen">
 
@@ -34859,9 +33693,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+    
 
     <div
     class="card memory-hero"
@@ -34904,10 +33736,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         DIFICULTAD
-    ====================================================== -->
-
+   
     <div
     class="card"
     style="margin-top:15px">
@@ -35007,10 +33836,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         TABLERO
-    ====================================================== -->
-
+    
     <div
     class="card"
     style="margin-top:15px">
@@ -35093,9 +33919,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -35129,10 +33953,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
-
+    
     <div
     class="memory-stats"
     style="margin-top:15px">
@@ -35199,10 +34020,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CONSEJO
-    ====================================================== -->
-
+   
     <div
     class="card memory-tip"
     style="margin-top:15px">
@@ -35235,9 +34053,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
 
 <style>
 
@@ -35722,16 +34537,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — MEMORY MASTER
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   SÍMBOLOS
-========================================================= */
+
 
 const MEMORY_SYMBOLS=[
 
@@ -35752,9 +34563,7 @@ const MEMORY_SYMBOLS=[
 
 
 
-/* =========================================================
-   CONFIGURACIÓN
-========================================================= */
+
 
 const MEMORY_CONFIG={
 
@@ -35783,9 +34592,6 @@ const MEMORY_CONFIG={
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
 
 let memoryState={
 
@@ -35821,9 +34627,7 @@ let memoryState={
 
 
 
-/* =========================================================
-   CAMBIAR DIFICULTAD
-========================================================= */
+
 
 function setMemoryDifficulty(
     difficulty,
@@ -35869,9 +34673,7 @@ function setMemoryDifficulty(
 
 
 
-/* =========================================================
-   CREAR CARTAS
-========================================================= */
+
 
 function createMemoryCards(){
 
@@ -35945,9 +34747,6 @@ function createMemoryCards(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
 
 function beginMemoryMaster(){
 
@@ -36012,9 +34811,6 @@ function beginMemoryMaster(){
 
 
 
-/* =========================================================
-   RENDER TABLERO
-========================================================= */
 
 function renderMemoryBoard(){
 
@@ -36101,9 +34897,7 @@ function renderMemoryBoard(){
 
 
 
-/* =========================================================
-   GIRAR CARTA
-========================================================= */
+
 
 function flipMemoryCard(
     index,
@@ -36195,9 +34989,6 @@ function flipMemoryCard(
 
 
 
-/* =========================================================
-   COMPROBAR PAREJA
-========================================================= */
 
 function checkMemoryPair(){
 
@@ -36371,9 +35162,7 @@ function checkMemoryPair(){
 
 
 
-/* =========================================================
-   TEMPORIZADOR
-========================================================= */
+
 
 function startMemoryTimer(){
 
@@ -36423,9 +35212,7 @@ function startMemoryTimer(){
 
 
 
-/* =========================================================
-   MOSTRAR TIEMPO
-========================================================= */
+
 
 function updateMemoryTimer(){
 
@@ -36438,9 +35225,7 @@ function updateMemoryTimer(){
 
 
 
-/* =========================================================
-   PROGRESO
-========================================================= */
+
 
 function updateMemoryProgress(){
 
@@ -36480,9 +35265,7 @@ function updateMemoryProgress(){
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
+
 
 function updateMemoryStats(){
 
@@ -36529,9 +35312,7 @@ function updateMemoryStats(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishMemoryMaster(
     timeOut=false
@@ -36637,10 +35418,7 @@ function finishMemoryMaster(
         memoryState.matched;
 
 
-    /*
-     * Se completó todo el tablero,
-     * se marca la zona como superada.
-     */
+   
 
     if(
         !timeOut &&
@@ -36728,9 +35506,6 @@ function finishMemoryMaster(
 
 
 
-/* =========================================================
-   RESET
-========================================================= */
 
 function resetMemoryMaster(){
 
@@ -36869,9 +35644,7 @@ function resetMemoryMaster(){
 
 
 
-/* =========================================================
-   CONSEJO
-========================================================= */
+
 
 function updateMemoryTip(){
 
@@ -36900,9 +35673,7 @@ function updateMemoryTip(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
+
 
 function openMemoryMaster(){
 
@@ -36917,9 +35688,7 @@ function openMemoryMaster(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitMemoryMaster(){
 
@@ -36954,11 +35723,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 19/24
-     🛡️ CYBER DEFENDER — SEGURIDAD DIGITAL
-========================================================= -->
+
 
 <section id="cyberDefender" class="screen">
 
@@ -37014,10 +35779,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-
+   
     <div
     class="card cyber-hero"
     style="margin-top:15px">
@@ -37059,9 +35821,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         NIVEL
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -37162,9 +35922,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CASO
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -37203,8 +35961,7 @@ console.log(
         </div>
 
 
-        <!-- ALERTA -->
-
+      
         <div
         id="cyberAlert"
         class="cyber-alert">
@@ -37237,7 +35994,7 @@ console.log(
         </div>
 
 
-        <!-- OPCIONES -->
+        
 
         <div
         id="cyberOptions"
@@ -37274,9 +36031,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PROGRESO
-    ====================================================== -->
+    
 
     <div
     class="card"
@@ -37310,9 +36065,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
+    
 
     <div
     class="cyber-stats"
@@ -37380,9 +36133,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CONSEJO
-    ====================================================== -->
+   
 
     <div
     class="card cyber-tip"
@@ -37416,9 +36167,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -37876,16 +36625,12 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — CYBER DEFENDER
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   CASOS DE SEGURIDAD
-========================================================= */
+
 
 const CYBER_CHALLENGES={
 
@@ -38895,9 +37640,7 @@ const CYBER_CHALLENGES={
 
 
 
-/* =========================================================
-   CONFIGURACIÓN
-========================================================= */
+
 
 const CYBER_CONFIG={
 
@@ -38923,9 +37666,7 @@ const CYBER_CONFIG={
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let cyberState={
 
@@ -38957,9 +37698,6 @@ let cyberState={
 
 
 
-/* =========================================================
-   DIFICULTAD
-========================================================= */
 
 function setCyberDifficulty(
     difficulty,
@@ -39005,9 +37743,7 @@ function setCyberDifficulty(
 
 
 
-/* =========================================================
-   PREPARAR CASOS
-========================================================= */
+
 
 function prepareCyberChallenges(){
 
@@ -39027,9 +37763,7 @@ function prepareCyberChallenges(){
 
 
 
-/* =========================================================
-   COMENZAR
-========================================================= */
+
 
 function beginCyberDefender(){
 
@@ -39070,9 +37804,7 @@ function beginCyberDefender(){
 
 
 
-/* =========================================================
-   MOSTRAR CASO
-========================================================= */
+
 
 function showCyberChallenge(){
 
@@ -39149,9 +37881,7 @@ function showCyberChallenge(){
 
 
 
-/* =========================================================
-   OPCIONES
-========================================================= */
+
 
 function renderCyberOptions(
     options
@@ -39228,9 +37958,6 @@ function renderCyberOptions(
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
 
 function answerCyber(
     selected,
@@ -39357,10 +38084,7 @@ function answerCyber(
             .forEach(
                 item=>{
 
-                    /*
-                     * Se marca visualmente
-                     * la respuesta correcta.
-                     */
+                   
 
                     if(
                         item.querySelector(
@@ -39412,9 +38136,6 @@ function answerCyber(
 
 
 
-/* =========================================================
-   TEMPORIZADOR
-========================================================= */
 
 function startCyberTimer(){
 
@@ -39467,9 +38188,6 @@ function startCyberTimer(){
 
 
 
-/* =========================================================
-   TIEMPO
-========================================================= */
 
 function updateCyberTimer(){
 
@@ -39516,9 +38234,7 @@ function updateCyberTimer(){
 
 
 
-/* =========================================================
-   TIMEOUT
-========================================================= */
+
 
 function cyberTimeOut(){
 
@@ -39611,9 +38327,7 @@ function cyberTimeOut(){
 
 
 
-/* =========================================================
-   PROGRESO
-========================================================= */
+
 
 function updateCyberProgress(){
 
@@ -39660,9 +38374,6 @@ function updateCyberProgress(){
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
 
 function updateCyberStats(){
 
@@ -39702,9 +38413,7 @@ function updateCyberStats(){
 
 
 
-/* =========================================================
-   CONSEJOS
-========================================================= */
+
 
 function updateCyberTip(){
 
@@ -39733,9 +38442,7 @@ function updateCyberTip(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
+
 
 function finishCyberDefender(){
 
@@ -39818,10 +38525,6 @@ function finishCyberDefender(){
         cyberState.correct;
 
 
-    /*
-     * Superar la misión completa
-     * desbloquea la siguiente zona.
-     */
 
     if(
         cyberState.correct>=3 &&
@@ -39914,9 +38617,7 @@ function finishCyberDefender(){
 
 
 
-/* =========================================================
-   RESET
-========================================================= */
+
 
 function resetCyberDefender(){
 
@@ -40045,9 +38746,6 @@ function resetCyberDefender(){
 
 
 
-/* =========================================================
-   ABRIR
-========================================================= */
 
 function openCyberDefender(){
 
@@ -40062,9 +38760,6 @@ function openCyberDefender(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitCyberDefender(){
 
@@ -40099,11 +38794,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 20/24
-     🏆 TECH BOSS — DESAFÍO DEL MAESTRO TÉCNICO
-========================================================= -->
+
 
 <section id="techBoss" class="screen">
 
@@ -40159,10 +38850,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PRESENTACIÓN
-    ====================================================== -->
-
+    
     <div
         class="card boss-hero"
         style="margin-top:15px">
@@ -40204,9 +38892,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         BARRA DEL JEFE
-    ====================================================== -->
+    
 
     <div
         class="card boss-health-card"
@@ -40270,9 +38956,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CATEGORÍA
-    ====================================================== -->
+   
 
     <div
         class="card"
@@ -40309,9 +38993,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PREGUNTA
-    ====================================================== -->
+   
 
     <div
         class="card boss-question-card"
@@ -40370,9 +39052,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
+   
 
     <div
         class="boss-stat-grid"
@@ -40440,9 +39120,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RANGO
-    ====================================================== -->
+   
 
     <div
         id="bossRankCard"
@@ -40481,9 +39159,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS TECH BOSS
-========================================================= -->
 
 <style>
 
@@ -40933,16 +39608,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT TECH BOSS
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   PREGUNTAS DEL JEFE
-========================================================= */
 
 const TECH_BOSS_QUESTIONS=[
 
@@ -41399,9 +40069,7 @@ const TECH_BOSS_QUESTIONS=[
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let techBossState={
 
@@ -41427,9 +40095,6 @@ let techBossState={
 
 
 
-/* =========================================================
-   INICIAR
-========================================================= */
 
 function startTechBoss(){
 
@@ -41467,9 +40132,6 @@ function startTechBoss(){
 
 
 
-/* =========================================================
-   MOSTRAR PREGUNTA
-========================================================= */
 
 function showBossQuestion(){
 
@@ -41538,9 +40200,7 @@ function showBossQuestion(){
 
 
 
-/* =========================================================
-   RESPUESTAS
-========================================================= */
+
 
 function renderBossAnswers(
     answers
@@ -41623,9 +40283,6 @@ function renderBossAnswers(
 
 
 
-/* =========================================================
-   RESPONDER
-========================================================= */
 
 function answerBoss(
     answer,
@@ -41786,9 +40443,6 @@ function answerBoss(
 
 
 
-/* =========================================================
-   SALUD DEL JEFE
-========================================================= */
 
 function updateBossHealth(){
 
@@ -41836,9 +40490,7 @@ function updateBossHealth(){
 
 
 
-/* =========================================================
-   ESTADÍSTICAS
-========================================================= */
+
 
 function updateBossStats(){
 
@@ -41893,9 +40545,6 @@ function updateBossStats(){
 
 
 
-/* =========================================================
-   RANGO
-========================================================= */
 
 function updateBossRank(){
 
@@ -41972,9 +40621,6 @@ function updateBossRank(){
 
 
 
-/* =========================================================
-   FINALIZAR
-========================================================= */
 
 function finishTechBoss(){
 
@@ -42177,9 +40823,6 @@ function finishTechBoss(){
 
 
 
-/* =========================================================
-   ABRIR JUEGO
-========================================================= */
 
 function openTechBoss(){
 
@@ -42194,9 +40837,6 @@ function openTechBoss(){
 
 
 
-/* =========================================================
-   RESET
-========================================================= */
 
 function resetTechBoss(){
 
@@ -42343,9 +40983,7 @@ function resetTechBoss(){
 
 
 
-/* =========================================================
-   LIMPIAR
-========================================================= */
+
 
 function clearTechBoss(){
 
@@ -42355,9 +40993,7 @@ function clearTechBoss(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitTechBoss(){
 
@@ -42393,11 +41029,6 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 21/24
-     🗺️ MAPA AVANZADO + SISTEMA DE NIVELES
-========================================================= -->
 
 <section id="advancedMap" class="screen">
 
@@ -42441,9 +41072,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PERFIL DEL JUGADOR
-    ====================================================== -->
+   
 
     <div
         class="card advanced-profile"
@@ -42504,9 +41133,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         ESTADÍSTICAS
-    ====================================================== -->
+    
 
     <div
         class="advanced-stat-grid"
@@ -42574,9 +41201,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         CAMINO DE NIVELES
-    ====================================================== -->
+   
 
     <div
         class="card"
@@ -42616,9 +41241,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         INFORMACIÓN DEL NIVEL
-    ====================================================== -->
+   
 
     <div
         id="advancedLevelInfo"
@@ -42668,9 +41291,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         BOTÓN DE JUGAR
-    ====================================================== -->
+    
 
     <div
         class="card"
@@ -42706,9 +41327,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS DEL MAPA
-========================================================= -->
+
 
 <style>
 
@@ -43131,16 +41750,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT — MAPA Y NIVELES
-========================================================= -->
+
 
 <script>
 
 
-/* =========================================================
-   DATOS DE LOS NIVELES
-========================================================= */
 
 const ADVANCED_LEVELS=[
 
@@ -43347,9 +41961,7 @@ const ADVANCED_LEVELS=[
 
 
 
-/* =========================================================
-   ESTADO DEL MAPA
-========================================================= */
+
 
 let advancedMapState={
 
@@ -43363,9 +41975,7 @@ let advancedMapState={
 
 
 
-/* =========================================================
-   CARGAR PROGRESO
-========================================================= */
+
 
 function loadAdvancedMap(){
 
@@ -43430,9 +42040,6 @@ function loadAdvancedMap(){
 
 
 
-/* =========================================================
-   GUARDAR PROGRESO
-========================================================= */
 
 function saveAdvancedMap(){
 
@@ -43462,9 +42069,7 @@ function saveAdvancedMap(){
 
 
 
-/* =========================================================
-   RENDER MAPA
-========================================================= */
+
 
 function renderAdvancedMap(){
 
@@ -43612,9 +42217,7 @@ function renderAdvancedMap(){
 
 
 
-/* =========================================================
-   SELECCIONAR NIVEL
-========================================================= */
+
 
 function selectAdvancedLevel(
     id
@@ -43670,9 +42273,7 @@ function selectAdvancedLevel(
 
 
 
-/* =========================================================
-   INFORMACIÓN DEL NIVEL
-========================================================= */
+
 
 function updateAdvancedLevelInfo(){
 
@@ -43800,9 +42401,7 @@ function updateAdvancedLevelInfo(){
 
 
 
-/* =========================================================
-   PERFIL
-========================================================= */
+
 
 function updateAdvancedProfile(){
 
@@ -43973,9 +42572,7 @@ function updateAdvancedProfile(){
 
 
 
-/* =========================================================
-   JUGAR NIVEL
-========================================================= */
+
 
 function playAdvancedLevel(){
 
@@ -44013,10 +42610,7 @@ function playAdvancedLevel(){
     }
 
 
-    /*
-       Intentamos abrir los juegos existentes.
-       Así el mapa se conecta con las partes anteriores.
-    */
+    
 
 
     const gameFunctions={
@@ -44080,10 +42674,7 @@ function playAdvancedLevel(){
     }
 
 
-    /*
-       Si el juego todavía no está conectado,
-       mostramos una notificación.
-    */
+   
 
     if(
         typeof toast===
@@ -44102,9 +42693,6 @@ function playAdvancedLevel(){
 
 
 
-/* =========================================================
-   COMPLETAR NIVEL
-========================================================= */
 
 function completeAdvancedLevel(
     id
@@ -44172,9 +42760,7 @@ function completeAdvancedLevel(
 
 
 
-/* =========================================================
-   ABRIR MAPA
-========================================================= */
+
 
 function openAdvancedMap(){
 
@@ -44199,9 +42785,6 @@ function openAdvancedMap(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitAdvancedMap(){
 
@@ -44230,9 +42813,7 @@ function exitAdvancedMap(){
 
 
 
-/* =========================================================
-   UTILIDADES
-========================================================= */
+
 
 function setText(
     id,
@@ -44256,9 +42837,6 @@ function setText(
 
 
 
-/* =========================================================
-   INICIALIZACIÓN
-========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -44277,11 +42855,7 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 22/24
-     🏅 LOGROS + MISIONES + RECOMPENSAS
-========================================================= -->
+
 
 <section id="achievementsScreen" class="screen">
 
@@ -44327,9 +42901,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PERFIL DE PROGRESO
-    ====================================================== -->
+    
 
     <div
         class="card achievement-profile"
@@ -44378,9 +42950,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         RESUMEN
-    ====================================================== -->
+    
 
     <div
         class="achievement-stats"
@@ -44448,10 +43018,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PESTAÑAS
-    ====================================================== -->
-
+   
     <div
         class="achievement-tabs"
         style="margin-top:15px">
@@ -44477,10 +43044,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         LOGROS
-    ====================================================== -->
-
+   
     <div
         id="achievementsList"
         class="achievement-list">
@@ -44488,10 +43052,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         MISIONES
-    ====================================================== -->
-
+    
     <div
         id="missionsList"
         class="achievement-list"
@@ -44503,9 +43064,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -44978,16 +43537,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   DATOS DE LOGROS
-========================================================= */
+
 
 const REDTECH_ACHIEVEMENTS=[
 
@@ -45246,10 +43800,6 @@ const REDTECH_ACHIEVEMENTS=[
 
 
 
-/* =========================================================
-   MISIONES
-========================================================= */
-
 const REDTECH_MISSIONS=[
 
     {
@@ -45343,9 +43893,7 @@ const REDTECH_MISSIONS=[
 
 
 
-/* =========================================================
-   ESTADO
-========================================================= */
+
 
 let achievementState={
 
@@ -45359,9 +43907,7 @@ let achievementState={
 
 
 
-/* =========================================================
-   ESTADO GENERAL
-========================================================= */
+
 
 function getRedtechGameState(){
 
@@ -45438,9 +43984,7 @@ function getRedtechGameState(){
 
 
 
-/* =========================================================
-   NIVELES COMPLETADOS
-========================================================= */
+
 
 function getCompletedLevels(){
 
@@ -45483,9 +44027,7 @@ function getCompletedLevels(){
 
 
 
-/* =========================================================
-   CARGAR LOGROS
-========================================================= */
+
 
 function loadAchievementState(){
 
@@ -45547,9 +44089,6 @@ function loadAchievementState(){
 
 
 
-/* =========================================================
-   GUARDAR
-========================================================= */
 
 function saveAchievementState(){
 
@@ -45572,9 +44111,7 @@ function saveAchievementState(){
 
 
 
-/* =========================================================
-   COMPROBAR LOGROS
-========================================================= */
+
 
 function checkAchievements(){
 
@@ -45640,9 +44177,6 @@ function checkAchievements(){
 
 
 
-/* =========================================================
-   DESBLOQUEAR LOGRO
-========================================================= */
 
 function unlockAchievement(
     achievement
@@ -45714,9 +44248,6 @@ function unlockAchievement(
 
 
 
-/* =========================================================
-   MISIONES
-========================================================= */
 
 function getMissionProgress(
     mission
@@ -45760,9 +44291,6 @@ function getMissionProgress(
 
 
 
-/* =========================================================
-   RECLAMAR MISIÓN
-========================================================= */
 
 function claimMission(
     missionId
@@ -45876,9 +44404,7 @@ function claimMission(
 
 
 
-/* =========================================================
-   RENDER LOGROS
-========================================================= */
+
 
 function renderAchievements(){
 
@@ -45995,9 +44521,7 @@ function renderAchievements(){
 
 
 
-/* =========================================================
-   RENDER MISIONES
-========================================================= */
+
 
 function renderMissions(){
 
@@ -46179,9 +44703,7 @@ function renderMissions(){
 
 
 
-/* =========================================================
-   RESUMEN
-========================================================= */
+
 
 function updateAchievementSummary(){
 
@@ -46332,9 +44854,6 @@ function updateAchievementSummary(){
 
 
 
-/* =========================================================
-   CAMBIAR PESTAÑA
-========================================================= */
 
 function showAchievementTab(
     tab
@@ -46405,9 +44924,7 @@ function showAchievementTab(
 
 
 
-/* =========================================================
-   ABRIR PANTALLA
-========================================================= */
+
 
 function openAchievements(){
 
@@ -46439,9 +44956,7 @@ function openAchievements(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
+
 
 function exitAchievements(){
 
@@ -46470,9 +44985,7 @@ function exitAchievements(){
 
 
 
-/* =========================================================
-   REGISTRAR XP DE SESIÓN
-========================================================= */
+
 
 function registerAchievementXP(
     amount
@@ -46503,9 +45016,6 @@ function registerAchievementXP(
 
 
 
-/* =========================================================
-   INICIALIZAR
-========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -46524,15 +45034,10 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 23/24
-     🛒 SHOP + AVATARES + TEMAS + INVENTARIO
-========================================================= -->
 
 <section id="shopScreen" class="screen">
 
-    <!-- CABECERA -->
+    
     <div class="card">
 
         <div class="row">
@@ -46573,10 +45078,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PERFIL
-    ====================================================== -->
-
+    
     <div
         class="card shop-profile"
         style="margin-top:15px">
@@ -46616,9 +45118,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         PESTAÑAS
-    ====================================================== -->
+    
 
     <div
         class="shop-tabs"
@@ -46662,10 +45162,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         TIENDA
-    ====================================================== -->
-
+   
     <div
         id="shopItems"
         class="shop-grid">
@@ -46673,9 +45170,7 @@ console.log(
     </div>
 
 
-    <!-- =====================================================
-         INVENTARIO
-    ====================================================== -->
+   
 
     <div
         id="inventoryItems"
@@ -46689,9 +45184,7 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS
-========================================================= -->
+
 
 <style>
 
@@ -47025,16 +45518,11 @@ console.log(
 
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   AVATARES
-========================================================= */
+
 
 const REDTECH_AVATARS=[
 
@@ -47137,9 +45625,6 @@ const REDTECH_AVATARS=[
 
 
 
-/* =========================================================
-   TEMAS
-========================================================= */
 
 const REDTECH_THEMES=[
 
@@ -47226,9 +45711,7 @@ const REDTECH_THEMES=[
 
 
 
-/* =========================================================
-   INVENTARIO ESPECIAL
-========================================================= */
+
 
 const REDTECH_ITEMS=[
 
@@ -47307,9 +45790,6 @@ const REDTECH_ITEMS=[
 
 
 
-/* =========================================================
-   ESTADO DE LA TIENDA
-========================================================= */
 
 let redtechShopState={
 
@@ -47333,9 +45813,6 @@ let redtechShopState={
 
 
 
-/* =========================================================
-   CARGAR TIENDA
-========================================================= */
 
 function loadRedtechShop(){
 
@@ -47428,9 +45905,6 @@ function loadRedtechShop(){
 
 
 
-/* =========================================================
-   GUARDAR TIENDA
-========================================================= */
 
 function saveRedtechShop(){
 
@@ -47453,9 +45927,6 @@ function saveRedtechShop(){
 
 
 
-/* =========================================================
-   OBTENER MONEDAS
-========================================================= */
 
 function getShopCoins(){
 
@@ -47476,9 +45947,6 @@ function getShopCoins(){
 
 
 
-/* =========================================================
-   ACTUALIZAR MONEDAS
-========================================================= */
 
 function updateShopCoins(){
 
@@ -47491,9 +45959,7 @@ function updateShopCoins(){
 
 
 
-/* =========================================================
-   MOSTRAR CATEGORÍA
-========================================================= */
+
 
 function showShopCategory(
     category
@@ -47590,9 +46056,7 @@ function showShopCategory(
 
 
 
-/* =========================================================
-   RENDER AVATARES
-========================================================= */
+
 
 function renderAvatarShop(){
 
@@ -47754,9 +46218,6 @@ function renderAvatarShop(){
 
 
 
-/* =========================================================
-   COMPRAR AVATAR
-========================================================= */
 
 function buyAvatar(
     id
@@ -47868,10 +46329,6 @@ function buyAvatar(
 
 
 
-/* =========================================================
-   EQUIPAR AVATAR
-========================================================= */
-
 function equipAvatar(
     id
 ){
@@ -47902,9 +46359,6 @@ function equipAvatar(
 
 
 
-/* =========================================================
-   APLICAR AVATAR
-========================================================= */
 
 function applyAvatar(){
 
@@ -47941,9 +46395,6 @@ function applyAvatar(){
 
 
 
-/* =========================================================
-   RENDER TEMAS
-========================================================= */
 
 function renderThemeShop(){
 
@@ -48105,9 +46556,6 @@ function renderThemeShop(){
 
 
 
-/* =========================================================
-   COMPRAR TEMA
-========================================================= */
 
 function buyTheme(
     id
@@ -48206,9 +46654,7 @@ function buyTheme(
 
 
 
-/* =========================================================
-   EQUIPAR TEMA
-========================================================= */
+
 
 function equipTheme(
     id
@@ -48240,9 +46686,6 @@ function equipTheme(
 
 
 
-/* =========================================================
-   APLICAR TEMA
-========================================================= */
 
 function applyTheme(){
 
@@ -48257,9 +46700,6 @@ function applyTheme(){
 
 
 
-/* =========================================================
-   INVENTARIO
-========================================================= */
 
 function renderInventory(){
 
@@ -48387,9 +46827,7 @@ function renderInventory(){
 
 
 
-/* =========================================================
-   COMPRAR ITEM
-========================================================= */
+
 
 function buyShopItem(
     id
@@ -48481,9 +46919,7 @@ function buyShopItem(
 
 
 
-/* =========================================================
-   USAR ITEM
-========================================================= */
+
 
 function useInventoryItem(
     id
@@ -48516,10 +46952,7 @@ function useInventoryItem(
     }
 
 
-    /*
-       El efecto real puede ser conectado
-       con los juegos de las partes anteriores.
-    */
+    
 
 
     if(
@@ -48633,9 +47066,7 @@ function useInventoryItem(
 
 
 
-/* =========================================================
-   MENSAJE
-========================================================= */
+
 
 function showShopMessage(
     message
@@ -48663,9 +47094,7 @@ function showShopMessage(
 
 
 
-/* =========================================================
-   ABRIR SHOP
-========================================================= */
+
 
 function openRedtechShop(){
 
@@ -48701,9 +47130,6 @@ function openRedtechShop(){
 
 
 
-/* =========================================================
-   PERFIL
-========================================================= */
 
 function updateShopProfile(){
 
@@ -48763,9 +47189,6 @@ function updateShopProfile(){
 
 
 
-/* =========================================================
-   SALIR
-========================================================= */
 
 function exitRedtechShop(){
 
@@ -48794,9 +47217,6 @@ function exitRedtechShop(){
 
 
 
-/* =========================================================
-   INICIALIZAR
-========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -48817,10 +47237,6 @@ console.log(
 );
 
 </script>
-<!-- =========================================================
-     REDTECH PC ACADEMY 3.0
-     PARTE 24/24 — INTEGRACIÓN FINAL
-========================================================= -->
 
 <section id="finalScreen" class="screen">
 
@@ -48846,7 +47262,7 @@ console.log(
         </p>
 
 
-        <!-- ESTADÍSTICAS FINALES -->
+       
 
         <div class="final-stats">
 
@@ -48912,8 +47328,7 @@ console.log(
         </div>
 
 
-        <!-- BOTONES -->
-
+     
         <div class="final-actions">
 
             <button
@@ -48966,9 +47381,6 @@ console.log(
 
 
 
-<!-- =========================================================
-     ESTILOS FINALES
-========================================================= -->
 
 <style>
 
@@ -49245,16 +47657,10 @@ console.log(
 
 
 
-<!-- =========================================================
-     SISTEMA DE INTEGRACIÓN FINAL
-========================================================= -->
 
 <script>
 
 
-/* =========================================================
-   ESTADO GLOBAL DE REDTECH
-========================================================= */
 
 window.REDTECH_FINAL = {
 
@@ -49280,9 +47686,7 @@ window.REDTECH_FINAL = {
 
 
 
-/* =========================================================
-   OBTENER ESTADO COMPLETO
-========================================================= */
+
 
 function getFinalRedtechState(){
 
@@ -49355,9 +47759,7 @@ function getFinalRedtechState(){
 
 
 
-/* =========================================================
-   ACTUALIZAR PANTALLA FINAL
-========================================================= */
+
 
 function updateFinalScreen(){
 
@@ -49392,9 +47794,6 @@ function updateFinalScreen(){
 
 
 
-/* =========================================================
-   ABRIR PANTALLA FINAL
-========================================================= */
 
 function openFinalScreen(){
 
@@ -49422,16 +47821,11 @@ function openFinalScreen(){
 
 
 
-/* =========================================================
-   ENTRAR A LA ACADEMY
-========================================================= */
+
 
 function openFinalAcademy(){
 
-    /*
-       Intentamos regresar a la pantalla
-       principal que exista en el proyecto.
-    */
+    
 
     const possibleScreens = [
 
@@ -49507,9 +47901,6 @@ function openFinalAcademy(){
 
 
 
-/* =========================================================
-   ABRIR MAPA
-========================================================= */
 
 function openFinalMap(){
 
@@ -49589,10 +47980,6 @@ function openFinalMap(){
     }
 
 
-    /*
-       Si no encuentra mapa,
-       mostramos un aviso.
-    */
 
     showFinalToast(
         "🗺️ El mapa de niveles está listo."
@@ -49602,9 +47989,6 @@ function openFinalMap(){
 
 
 
-/* =========================================================
-   BOTÓN LOGROS
-========================================================= */
 
 function finalOpenAchievements(){
 
@@ -49624,9 +48008,6 @@ function finalOpenAchievements(){
 
 
 
-/* =========================================================
-   BOTÓN TIENDA
-========================================================= */
 
 function finalOpenShop(){
 
@@ -49643,9 +48024,6 @@ function finalOpenShop(){
 
 
 
-/* =========================================================
-   SISTEMA DE MONEDAS SEGURO
-========================================================= */
 
 if(
     typeof window.addCoins !==
@@ -49700,9 +48078,7 @@ if(
 
 
 
-/* =========================================================
-   SISTEMA DE GASTAR MONEDAS
-========================================================= */
+
 
 if(
     typeof window.spendCoins !==
@@ -49777,9 +48153,7 @@ if(
 
 
 
-/* =========================================================
-   SISTEMA XP SEGURO
-========================================================= */
+
 
 if(
     typeof window.addXP !==
@@ -49841,10 +48215,6 @@ if(
 
 
 
-/* =========================================================
-   ACTUALIZAR MONEDAS
-========================================================= */
-
 function updateShopCoinsSafe(){
 
     const element =
@@ -49871,9 +48241,6 @@ function updateShopCoinsSafe(){
 
 
 
-/* =========================================================
-   REGISTRO DE PARTIDA
-========================================================= */
 
 function redtechRegisterGame(
     correctAnswers = 0
@@ -49929,9 +48296,6 @@ function redtechRegisterGame(
 
 
 
-/* =========================================================
-   GUARDAR TODO
-========================================================= */
 
 function saveEverythingREDTECH(){
 
@@ -49977,9 +48341,6 @@ function saveEverythingREDTECH(){
 
 
 
-/* =========================================================
-   CARGAR TODO
-========================================================= */
 
 function loadEverythingREDTECH(){
 
@@ -50018,9 +48379,6 @@ function loadEverythingREDTECH(){
 
 
 
-/* =========================================================
-   TOAST FINAL
-========================================================= */
 
 function showFinalToast(
     message
@@ -50122,9 +48480,6 @@ function showFinalToast(
 
 
 
-/* =========================================================
-   AUTO-GUARDADO
-========================================================= */
 
 setInterval(
     ()=>{
@@ -50137,9 +48492,6 @@ setInterval(
 
 
 
-/* =========================================================
-   GUARDAR AL SALIR
-========================================================= */
 
 window.addEventListener(
     "beforeunload",
@@ -50152,9 +48504,6 @@ window.addEventListener(
 
 
 
-/* =========================================================
-   INICIALIZACIÓN FINAL
-========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -50188,9 +48537,6 @@ document.addEventListener(
 );
 
 
-/* =========================================================
-   FIN DEL PROYECTO
-========================================================= */
 
 window.REDTECH_PROJECT_COMPLETE =
     true;
